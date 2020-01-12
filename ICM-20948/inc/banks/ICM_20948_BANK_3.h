@@ -136,7 +136,7 @@
  	
  	// REG 0x17 (23)
  	uint8_t I2C_SLV4_DI          :8;
- }
+ };
  
  
 #endif // ICM_20948_BANK_3_H

@@ -1,5 +1,5 @@
-// mainTest.c
 //
+// mainTest.c
 //
 
 
@@ -44,7 +44,7 @@ int main(void) {
 	struct tagDriveInstance icm = DriverClass.new(2,225,4,5);
 	printf("%d %d %d %d \n\n", icm.setting_1, icm.setting_2, icm.setting_3, icm.setting_4);
 	SHOW(int, icm.setting_1);
-	SHOW(struct BANK0_READINGS, icm.bank_0_readings);
+	SHOW(struct BANK0_READINGS, icm.banks.bank_0_readings);
 	int res = icm.add(&icm, 10);
 	SHOW(int, res);
 

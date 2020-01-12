@@ -149,7 +149,7 @@
  	uint8_t FIFO_CFG           :1;
  	uint8_t                    :7;
  	//
- }
+ };
  
  
  

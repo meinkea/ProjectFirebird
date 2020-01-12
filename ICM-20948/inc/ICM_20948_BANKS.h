@@ -7,12 +7,16 @@
  #define ICM_20948_BANKS_H
  
  #include <stdint.h>
+ #include "banks/ICM_20948_BANK_0.h"
+ #include "banks/ICM_20948_BANK_1.h"
+ #include "banks/ICM_20948_BANK_2.h"
+ #include "banks/ICM_20948_BANK_3.h"
  
  
  // Container for Register Banks
  struct BANKS {
  	uint8_t :4;
- 	uint8_t :USER_BANKS :2;
+ 	uint8_t USER_BANKS :2;
  	uint8_t :2;
  	
  	struct BANK0_SETTINGS bank_0_settings;
@@ -28,3 +32,5 @@
  
  
 #endif // ICM_20948_BANKS_H
+
+

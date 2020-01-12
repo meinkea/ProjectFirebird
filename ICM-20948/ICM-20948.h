@@ -1,5 +1,5 @@
-// ICM-20948.h
 //
+// ICM-20948.h
 //
 
 #ifndef ICM_20948_H
@@ -7,7 +7,8 @@
 
 
 #include <stdio.h>
-#include "inc/banks.h"
+#include "inc/ICM_20948_BANKS.h"
+#include "inc/ICM_20948_REGISTERS.h"
 
 
 // Struct containing varaible memebers and function memebers
@@ -21,7 +22,7 @@ struct tagDriveInstance {
 	struct BANKS banks;
 
 	// Instance Methods
-	int (*add)(struct tagDriveInstance * this);
+	int (*add)(struct tagDriveInstance * this, int num);
 };
 
 // Global Constant Struct containing class variables and methods
@@ -36,3 +37,5 @@ extern const struct tagMyDriverClass {
 } DriverClass;
 
 #endif // ICM_20948_H
+
+

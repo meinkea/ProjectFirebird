@@ -3,8 +3,8 @@
 //
 
 
-#ifndef ICM_20948_BANKS_2_H
- #define ICM_20948_BANKS_2_H
+#ifndef ICM_20948_BANK_2_H
+ #define ICM_20948_BANK_2_H
  
  #include <stdint.h>
  
@@ -34,7 +34,7 @@
  	// REG 0x05 (5)
  	uint8_t YG_OFFS_USER_H       :8;
  	// REG 0x06 (6)
- 	uint8_t ZG_OFFS_USER_L       :8;
+ 	uint8_t YG_OFFS_USER_L       :8;
  	
  	// REG 0x07 (7)
  	uint8_t ZG_OFFS_USER_H       :8;
