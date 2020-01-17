@@ -1,2 +1,0 @@
-# ProjectFirebird
-Rocket Powered Glider
