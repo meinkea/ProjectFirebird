@@ -1,4 +1,5 @@
-function [q,L,D,M] = aeroPred(alpha,velocity,S,c,a_array,cl_array,cd_array,cm_array)
+%% Function to determine aerodynamic forces acting on aircraft
+function [q,L,D,M] = aeroPred(alpha,velocity,S,c,a_array,cl_array,cd_array,cm_array,elv_def)
 % INPUTS:
 %   Alpha               (degrees)
 %   Velocity            (m/s)
@@ -16,14 +17,17 @@ function [q,L,D,M] = aeroPred(alpha,velocity,S,c,a_array,cl_array,cd_array,cm_ar
 %   Lift             (N)
 %   Drag             (N)
 
+
+%fprintf('aeroData AOA: %f\n',alpha)
+
 % Assuming constant density
 rho = 1.225; % kg/m^3
 
 % Calculate dynamic pressure
-q = .5*rho*(velocity.^2); % Pascals
+q = .5*rho*(velocity^2); % Pascals
 
 % Call function to get aerodynamic coefficients
-[Cl,Cd,Cm] = getCoeffs(alpha,a_array,cl_array,cd_array,cm_array);
+[Cl,Cd,Cm] = getCoeffs(alpha,a_array,cl_array,cd_array,cm_array,elv_def);
 
 % Calculate lift, drag, and moment
 L = q*S*Cl;
