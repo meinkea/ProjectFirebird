@@ -1,5 +1,5 @@
 %main
-%Version 4 of Orange Team Flyout Sim
+%Version 5 of Orange Team Flyout Sim
 %Contributors:
 %William "Mikhaila" Gregory
 %Christopher Opificius
@@ -12,15 +12,14 @@ close all;
 %Defining constants
 load('aeroData.mat'); %Aerodynamic data
 
-elevator_setting = 3; %Setting the elevator angle (degrees)
-thetag = -6; %degrees (pitch angle for glide phase)
-alphatrim = trim(elevator_setting,alpha,cm); %degrees(the alpha value for trimmed conditions)
+thetag = -8; %degrees (pitch angle for glide phase)
+alphaboost = -2.25; %degrees(the alpha value for cl=0)
 
 m0 = 0.167; %kg (inital mass)
 mf = m0-0.0104; %kg (final mass)
 tb = 0.840; %seconds (burn time)
 drail = distdim(3,'ft','m'); %meters
-dt = 0.005; %time interval
+dt = 0.001; %time interval
 
 %Setting initial conditions
 %Setting first entry into arrays
@@ -33,9 +32,8 @@ h(1) = 0; %meters
 d(1) = 0; %meters
 theta(1) = 60; %degrees
 gamma(1) = 60; %degrees
-gamdot(1) = 0;
 a(1) = 0; %alpha in degrees
-Thrust(1) = 0;
+Thrust(1) = 0; %thrust in newtons
 
 %Setting constant values
 i = 1;
@@ -46,7 +44,6 @@ OnRail = true;
 BoostFlight = true;
 Transition = true;
 Glide = false;
-
 %Simulation
 while h(i) >= -0.0000000000001
     
@@ -75,27 +72,21 @@ while h(i) >= -0.0000000000001
         thrust = thrustcurve(t(i)); %Finding thrust at current time
         m = ((tb-t(i))/tb)*(m0-mf)+mf; %Finding mass at current time
         
-        %Switching to Boost flight phase when this is true.
-        if h(i) > hr && d(i) > dr
-            a(i) = alphatrim; %Setting new alpha value
-            OnRail = false;
-            BoostFlight = true;
-        end
-        
-        fprintf('In boost rail phase! Height is %d and range is %d \n',h(i),d(i))
+        %Switching to Boost flight phase when this is true.     
+        fprintf('In boost rail phase! Gamma is %d and Alpha is %d \n',gamma(i),a(i))
         
         %Boost flight phase
-    elseif t(i) <= tb && d(i) > dr && BoostFlight == true
+    elseif t(i) <= tb && d(i) > dr && h(i) > hr && BoostFlight == true
         OnRail = false; %Rail can no longer be used
         
         %Defining angles
-        a(i) = alphatrim; %Finding new alpha
+        a(i) = alphaboost; %Setting new alpha
         theta(i) = gamma(i) + a(i); %Finding new theta
         
         thrust = thrustcurve(t(i)); %Finding thrust at current time
         m = ((tb-t(i))/tb)*(m0-mf)+mf; %Finding mass at current time
-        
-        fprintf('In boost flight phase! Height is %d and range is %d \n',h(i),d(i))
+
+        fprintf('In boost flight phase! Gamma is %d and Alpha is %d \n',gamma(i),a(i))
         
         %Transitional phase
     elseif theta(i) >= thetag && t(i) > tb && Transition == true
@@ -105,7 +96,7 @@ while h(i) >= -0.0000000000001
         m = mf; %Constant mass
         
         %Define angles
-        a(i) = alphatrim; %Finding new alpha
+        a(i) = alphaboost; %Setting new alpha
         theta(i) = gamma(i) + a(i);%Finding new theta
         
         %Transitioning to glide phase when this is true.
@@ -113,8 +104,8 @@ while h(i) >= -0.0000000000001
             Transition = false;
             Glide = true;
         end
-        
-        fprintf('In transitional phase! Height is %d and range is %d \n',h(i),d(i))
+
+        fprintf('In transitional phase! Gamma is %d and Alpha is %d \n',gamma(i),a(i))
         
         %Glide phase
     elseif Glide == true
@@ -124,13 +115,13 @@ while h(i) >= -0.0000000000001
         thrust = 0; %No thrust
         m = mf; %Constant mass
         a(i) = theta(i) - gamma(i); %Finding new alpha
-        
-        fprintf('In glide phase! Height is %d and range is %d \n',h(i),d(i))
+
+        fprintf('In glide phase! Gamma is %d and Alpha is %d \n',gamma(i),a(i))
     end
     
     
-    [q,L,D,M] = aeroPred(a(i),V(i),S,c,alpha,cl,cd,cm,elevator_setting); %Grabbing Aero predicitons
-    [Vel,path,alt,down,gammadot] = twoddata(thrust,a(i),gamma(i),V(i),D,L,m,g,dt,h(i),d(i)); %Integrating
+    [q,L,D,M] = aeroPred(a(i),V(i),S,c,alpha,cl0,cd0,cm0); %Grabbing Aero predicitons
+    [Vel,path,alt,down] = twoddata(thrust,a(i),gamma(i),V(i),D,L,m,g,dt,h(i),d(i),Glide); %Integrating
     
     %Storing new values
     V(i+1) = Vel; %Velocity
@@ -139,12 +130,11 @@ while h(i) >= -0.0000000000001
     theta(i+1) = theta(i); %Pitch angle
     gamma(i+1) = path; %Flight Path angle
     a(i+1) = a(i); %Angle of attack
-    gamdot(i+1) = gammadot;
     Lift(i+1) = L; %Lift
     Drag(i+1) = D; %Drag
     Moment(i+1) = M; %Moment
     Thrust(i+1) = thrust; %Thrust
-    
+
     %Propigate
     t(i+1) = t(i) + dt;
     i = i+1;
