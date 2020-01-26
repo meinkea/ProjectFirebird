@@ -41,8 +41,8 @@ void print_bits(char * ty, char * val, unsigned char * bytes, size_t num_bytes) 
 // Main Test Method
 int main(void) {
 
-	struct tagDriveInstance icm = DriverClass.new(2,225,4,5);
-	printf("%d %d %d %d \n\n", icm.setting_1, icm.setting_2, icm.setting_3, icm.setting_4);
+	struct intFIFO queue1 = intFIFO_Class.new(2UL);
+	printf("%d %d %d %d \n\n", queue1.size, queue1.setting_2, icm.setting_3, icm.setting_4);
 	SHOW(int, icm.setting_1);
 	SHOW(struct BANK0_READINGS, icm.banks.bank_0_readings);
 	int res = icm.add(&icm, 10);
