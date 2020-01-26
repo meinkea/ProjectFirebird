@@ -1,36 +1,29 @@
-%% Function to determine aerodynamic forces acting on aircraft
-function [q,L,D,M] = aeroPred(alpha,velocity,S,c,a_array,cl_array,cd_array,cm_array,elv_def)
+% Function to determine aerodynamic coefficients
+function [CL,CD,CM] = getCoeffs(alpha,a,cl,cd,cm)
 % INPUTS:
-%   Alpha               (degrees)
-%   Velocity            (m/s)
-%   S (Planform Area)   (m^2)
-%   c (chord length)    (m)
-%   a_array: array containing alpha increments of aero data
-%   cl_array: array containing Cl values at various alpha's. Only data for
-%       0 degree elevator deflection
-%   cd_array: array containing Cd values at various alpha's. Only data for
-%       0 degree elevator deflection
-%   cm_array: array containing Cm values at various alpha's. Only data for
-%       0 degree elevator deflection
+%   a, cl, cd, & cm are all arrays based on 0 elevator deflection
 % OUTPUTS:
-%   Dynamic Pressure (Pa)
-%   Lift             (N)
-%   Drag             (N)
+%   function outputs lift, drag and moment coefficient based on alpha
+
+% The flyout simulation is assuming no controller. Thus, the coefficients 
+% needs to be interpolated based on alpha assuming a constant elevator
+% deflection of 0 degrees. Should a controller be added later on,
+% interpolatioon will also need to account for elevator deflection.
 
 
-%fprintf('aeroData AOA: %f\n',alpha)
+% 'linear' specifies linear interpolation
+% 'extrap' lets the function extrapolate information if your input is
+%   outside of the given data range
 
-% Assuming constant density
-rho = 1.225; % kg/m^3
+% Define elevator deflections
+%def = [-15,0,15];
+CL = interp1(a,cl,alpha,'pchip','extrap');
+CD = interp1(a,cd,alpha,'pchip','extrap');
+CM = interp1(a,cm,alpha,'pchip','extrap');
 
-% Calculate dynamic pressure
-q = .5*rho*(velocity^2); % Pascals
-
-% Call function to get aerodynamic coefficients
-[Cl,Cd,Cm] = getCoeffs(alpha,a_array,cl_array,cd_array,cm_array,elv_def);
-
-% Calculate lift, drag, and moment
-L = q*S*Cl;
-D = q*S*Cd;
-M = q*S*c*Cm;
+%{
+CL = interp1(def,CL1,elvDef,'pchip','extrap');
+CD = interp1(def,CD1,elvDef,'pchip','extrap');
+CM = interp1(def,CM1,elvDef,'pchip','extrap');
+%}
 end
