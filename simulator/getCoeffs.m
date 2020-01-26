@@ -1,5 +1,5 @@
-%% Function to determine aerodynamic coefficients
-function [CL,CD,CM] = getCoeffs(alpha,a,cl,cd,cm,elvDef)
+% Function to determine aerodynamic coefficients
+function [CL,CD,CM] = getCoeffs(alpha,a,cl,cd,cm)
 % INPUTS:
 %   a, cl, cd, & cm are all arrays based on 0 elevator deflection
 % OUTPUTS:
@@ -16,14 +16,14 @@ function [CL,CD,CM] = getCoeffs(alpha,a,cl,cd,cm,elvDef)
 %   outside of the given data range
 
 % Define elevator deflections
-def = [-15,0,15]';
+%def = [-15,0,15];
+CL = interp1(a,cl,alpha,'pchip','extrap');
+CD = interp1(a,cd,alpha,'pchip','extrap');
+CM = interp1(a,cm,alpha,'pchip','extrap');
 
-CL1 = interp1(a,cl,alpha,'pchip','extrap')';
-CD1 = interp1(a,cd,alpha,'pchip','extrap')';
-CM1 = interp1(a,cm,alpha,'pchip','extrap')';
-
-
+%{
 CL = interp1(def,CL1,elvDef,'pchip','extrap');
 CD = interp1(def,CD1,elvDef,'pchip','extrap');
 CM = interp1(def,CM1,elvDef,'pchip','extrap');
+%}
 end
