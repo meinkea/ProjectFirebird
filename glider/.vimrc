@@ -115,7 +115,7 @@ nnoremap <leader>/ :nohlsearch<CR>
 " FOLD SETTINGS
 set foldenable " Enable folds
 set foldmethod=indent " manual indent syntax expr marker diff - https://vim.fandom.com/wiki/Folding
-set shiftwidth=4 " indent = indent of line / shiftwidth (rounded down)
+set shiftwidth=2 " indent = indent of line / shiftwidth (rounded down)
 set foldcolumn=3 " Width of column side bar
 set foldlevelstart=1 " Open foldlevel when file is opened
 nnoremap <silent><space> @=(foldlevel('.')?'za':"\<space>")<CR>
@@ -184,7 +184,7 @@ function! OpenInTab(node)
 	call a:node.activate({'reuse': 'all', 'where': 't'})
 endfunction
 
-let NERDTreeMapOpenInTab='<ENTER>'
+"let NERDTreeMapOpenInTab='<ENTER>'
 	" Open nerd tree in new tab
 
 
