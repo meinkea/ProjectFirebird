@@ -14,7 +14,8 @@ au FileType * set fo-=c fo-=r fo-=o
 inoremap <C-r> <C-o>:set formatoptions-=cro<CR>
 inoremap <C-e> <C-o>:set formatoptions+=cro<CR>
 inoremap <C-Space> <C-o>:set formatoptions-=cro<CR><CR><C-o>:set formatoptions+=cro<CR>
-	
+
+
 
 " FORMATING VISUALS
 
@@ -23,23 +24,25 @@ set listchars=tab:>-,space:•,extends:>,precedes:<
 
 
 
+" EDITING TOOLS
+
+nnoremap <leader>l :s/$/\=repeat(' ',64-virtcol('$'))
 
 
+" truncate line 'line' to no more than 'limit' width
+function! Truncate( line, limit )
+  call cursor(a:line,a:limit)
+  norm d$
+endfunc
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+" Pad all lines with trailing blanks to 'limit' length.
+function! AtOnce( limit )
+  norm mm
+  g/^/norm 100A
+  g/^/call Truncate( getline('.'), a:limit )
+  let @/=""
+  norm 'm
+endfunc
 
 
 
@@ -81,8 +84,9 @@ nnoremap <S-A-Right> :bnext<CR>
 nnoremap <leader>q :bdelete
 
 " TABS_KEY
-set tabstop=4 " number of visual spacesper TAB
-set softtabstop=4 "number of spaces in tab when editing
+set tabstop=2 " number of visual spacesper TAB
+set softtabstop=1 "number of spaces in tab when editing
+set expandtab
 
 " POSITION GUIDES & VISUAL AIDS
 set number
