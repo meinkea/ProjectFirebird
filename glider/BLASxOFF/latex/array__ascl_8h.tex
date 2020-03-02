@@ -1,0 +1,55 @@
+\hypertarget{array__ascl_8h}{}\section{src/lvl0/inc/array\+\_\+ascl.h File Reference}
+\label{array__ascl_8h}\index{src/lvl0/inc/array\+\_\+ascl.\+h@{src/lvl0/inc/array\+\_\+ascl.\+h}}
+{\ttfamily \#include \char`\"{}esp\+\_\+attr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/array\+\_\+ascl.\+c\char`\"{}}\newline
+Include dependency graph for array\+\_\+ascl.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{array__ascl_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{array__ascl_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__ascl_8h_ac1908d68205199c13de3fb620ba0d1d3}{array\+\_\+ascl} (float $\ast$arr\+Res, const float $\ast$arr\+Opr, const float scl\+Opr, const unsigned int start, const unsigned int end) \+\_\+\+\_\+attribute\+\_\+\+\_\+((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{array__ascl_8h_ac1908d68205199c13de3fb620ba0d1d3}\label{array__ascl_8h_ac1908d68205199c13de3fb620ba0d1d3}} 
+\index{array\+\_\+ascl.\+h@{array\+\_\+ascl.\+h}!array\+\_\+ascl@{array\+\_\+ascl}}
+\index{array\+\_\+ascl@{array\+\_\+ascl}!array\+\_\+ascl.\+h@{array\+\_\+ascl.\+h}}
+\subsubsection{\texorpdfstring{array\+\_\+ascl()}{array\_ascl()}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR array\+\_\+ascl (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+Opr,  }\item[{const float}]{scl\+Opr,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
+
+This function adds a scalar too each element in an array
+
+
+\begin{DoxyItemize}
+\item This function is deliberatly placed in Instruction R\+AM. Meaning that this function will always remained cached.
+\item the {\bfseries attribute}((always\+\_\+inline)) tells the compiler to A\+L\+W\+A\+YS inline to function reguardless of optimization levels
+\item the {\bfseries attribute}((nonull)) tells the compiler that the function\textquotesingle{}s pointer arguments cannot bell N\+U\+LL
+\end{DoxyItemize}
+
+Function definition for adding a scalar to an array 
+\begin{DoxyParams}{Parameters}
+{\em arr\+Res} & Array pointer where the result will be stored \\
+\hline
+{\em arr\+Opr} & Pointer for the array operand \\
+\hline
+{\em scl\+Opr} & Scalar operand to add to the elements of the array operand \\
+\hline
+{\em start} & Begining element index to begin loop \\
+\hline
+{\em end} & Last element index to loop across \\
+\hline
+\end{DoxyParams}
