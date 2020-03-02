@@ -13,7 +13,7 @@ void vnrm1(float * sclRes, const struct vector * vOprA, const struct vector * vO
   float * vB = vOprB->v;
 
 
-  float res = 0.0
+  float res = 0.0;
   unsigned int length = vOprA->l;
 
 

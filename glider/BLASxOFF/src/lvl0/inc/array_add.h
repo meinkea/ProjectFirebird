@@ -23,7 +23,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_add.c"
+  #include "../src/array_add.c__"
 
 
 #endif // ARRAY_ADD_H

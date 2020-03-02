@@ -23,7 +23,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_dot.c"
+  #include "../src/array_dot.c__"
 
 
 #endif // ARRAY_DOT_H

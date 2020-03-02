@@ -4,15 +4,16 @@
 
 
 #include "../inc/vprint.h"
-
 #include "../../lvl0/inc/array_print.h"
+#include <stddef.h>
+
 
 
 void vprint(char * buf, const struct vector * vSrc) {
   float * vS = vSrc->v;
 
   for(unsigned int I=0; I<vSrc; ++I) {
-    array_print(buf[I], v[I]);
+    array_print(buf[I], vS[I]);
   }
 
   return;
@@ -52,5 +53,12 @@ int vprint_free_buffer(char * buf) {
   return 0;
 }
 
+
+
+  //! This useful function calculates the required char buffer size for printing
+  //!
+unsigned int calc_buffer_size_req(const struct vector * vOpr) {
+    return (unsigned int) (sizeof(char) * (vOpr->l * (BLAS_PRINT_ARRAY__NUM_DIGITS) +1));
+}
 
 

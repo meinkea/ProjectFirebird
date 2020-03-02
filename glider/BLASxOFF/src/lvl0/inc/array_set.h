@@ -22,7 +22,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_set.c"
+  #include "../src/array_set.c__"
 
 
 #endif // ARRAY_SET_H

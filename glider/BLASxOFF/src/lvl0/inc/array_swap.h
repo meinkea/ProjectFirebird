@@ -9,13 +9,18 @@
   #define ARRAY_SWAP_H
 
 
-  #include "../../gnd/inc/matrix.h"
+  #include "esp_attr.h"
 
 
-  void array_swap(
+  void IRAM_ATTR array_swap(
          float * arrSrcDstA,
          float * arrSrcDstB
-       );
+       )
+         __attribute__((always_inline))
+         __attribute__((nonull));
+
+
+  #include "../src/array_zero.c__"
 
 
 #endif // ARRAY_SWAP_H

@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VZERO_H
-  #ifndef BLAS_VZERO_H
+  #define BLAS_VZERO_H
 
 
   #include "esp_attr.h"

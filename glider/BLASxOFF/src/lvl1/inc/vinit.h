@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VINIT_H
-  #ifndef BLAS_VINIT_H
+  #define BLAS_VINIT_H
 
 
   #include "esp_attr.h"

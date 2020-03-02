@@ -22,7 +22,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_copy.c"
+  #include "../src/array_copy.c__"
 
 
 #endif // ARRAY_COPY_H

@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VCOPY_H
-  #ifndef BLAS_VCOPY_H
+  #define BLAS_VCOPY_H
 
 
   #include "esp_attr.h"

@@ -11,7 +11,7 @@
 
 
 void vcopy(struct vector * vDst, const struct vector * vSrc) {
-  array_copy(vDst->v, vSrc->, 0, vDst->l);
+  array_copy(vDst->v, vSrc->v, 0, vDst->l);
   return;
 }
 

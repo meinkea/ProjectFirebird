@@ -23,7 +23,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_mscl.c"
+  #include "../src/array_mscl.c__"
 
 
 #endif // ARRAY_MSCL_H

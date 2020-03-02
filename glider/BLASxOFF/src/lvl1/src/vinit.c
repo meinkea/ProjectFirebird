@@ -44,7 +44,7 @@ int vinit(struct vector * V, const unsigned int l) {
   V->v = Vptr;
 
   // Set vector Allocated flag
-  V->flags = pv->flags | V_ALLOCATED_F;
+  V->flags = V_ALLOCATED_F;
 
   return 0;
 }

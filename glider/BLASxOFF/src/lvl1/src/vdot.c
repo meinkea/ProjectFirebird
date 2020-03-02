@@ -11,7 +11,7 @@
 
 
 void vdot(float * sclRes, const struct vector * vOprA, const struct vector * vOprB) {
-  array_dot(sclRes->v, vOprA->v, vOprB->v, 0, vOprA->l);
+  array_dot(sclRes, vOprA->v, vOprB->v, 0, vOprA->l);
   return;
 }
 

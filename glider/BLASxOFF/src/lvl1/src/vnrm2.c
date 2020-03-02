@@ -24,7 +24,7 @@ void vnrm2(float * sclRes, const struct vector * vOprA, const struct vector * vO
   float ssq = 1;
   float ax = 0.0;
 
-  for(unsigned int I=0; I<vOpr->l; ++I) {
+  for(unsigned int I=0; I<vOprA->l; ++I) {
     ax = vA[I] - vB[I];
     if(ax != 0) {
       ax = fabs(ax);
@@ -38,7 +38,8 @@ void vnrm2(float * sclRes, const struct vector * vOprA, const struct vector * vO
       }
     } // L10:
   }
-  sclRes = scale*sqrt(ssq);  
+  * sclRes = scale*sqrt(ssq);  
+  return;
 }
 
 

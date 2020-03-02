@@ -25,7 +25,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_ascl.c"
+  #include "../src/array_ascl.c__"
 
 
 #endif // ARRAY_ASCL_H

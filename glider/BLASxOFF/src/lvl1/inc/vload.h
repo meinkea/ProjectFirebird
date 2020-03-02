@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VLOAD_H
-  #ifndef BLAS_VLOAD_H
+  #define BLAS_VLOAD_H
 
 
   #include "esp_attr.h"

@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VNRM1_H
-  #ifndef BLAS_VNRM1_H
+  #define BLAS_VNRM1_H
 
 
   #include "esp_attr.h"

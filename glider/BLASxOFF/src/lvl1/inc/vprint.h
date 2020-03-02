@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VPRINT_H
-  #ifndef BLAS_VPRINT_H
+  #define BLAS_VPRINT_H
 
 
   #include "esp_attr.h"
@@ -12,12 +12,11 @@
 
   // Vector Datatype
   #include "../../gnd/inc/vector.h"
-  #include "../../lvl0/inc/array_print.h"
 
 
   void IRAM_ATTR vprint(
          char * buf,
-         const struct vector * vSrc,
+         const struct vector * vSrc
       )
          __attribute__((nonull))
   ;
@@ -27,20 +26,21 @@
         char * buf,
         const struct vector * vSrc
       )
+         __attribute__((nonull))
   ;
 
 
   int vprint_free_buffer(
         char * buf
       )
+         __attribute__((nonull))
   ;
 
-
-  //! This useful function calculates the required char buffer size for printing
-  //!
-  inline unsigned int calc_buffer_size_req(const struct vector * vOpr) {
-    return (unsigned int) (sizeof(char) * (vOpr->l * (BLAS_PRINT_ARRAY__NUM_DIGITS) +1));
-  }
+  unsigned int calc_buffer_size_req(
+                 const struct vector * vOpr
+      )
+         __attribute__((nonull))
+  ;
 
 
 #endif // BLAS_VPRINT_H

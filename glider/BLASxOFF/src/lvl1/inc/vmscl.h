@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VMSCL_H
-  #ifndef BLAS_VMSCL_H
+  #define BLAS_VMSCL_H
 
 
   #include "esp_attr.h"

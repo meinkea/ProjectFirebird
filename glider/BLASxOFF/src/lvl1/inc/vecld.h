@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VECLD_H
-  #ifndef BLAS_VECLD_H
+  #define BLAS_VECLD_H
 
 
   #include "esp_attr.h"
@@ -15,7 +15,7 @@
 
 
   void IRAM_ATTR vecld(
-         struct vector * vRes,
+         float * sclRes,
          const struct vector * vOpr
       )
          __attribute__((nonull))

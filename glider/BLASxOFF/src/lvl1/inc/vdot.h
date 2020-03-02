@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VDOT_H
-  #ifndef BLAS_VDOT_H
+  #define BLAS_VDOT_H
 
 
   #include "esp_attr.h"
@@ -15,7 +15,7 @@
 
 
   void IRAM_ATTR vdot(
-         struct vector * vRes,
+         float * sclRes,
          const struct vector * vOprA,
          const struct vector * vOprB
       )

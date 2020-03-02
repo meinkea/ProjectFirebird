@@ -13,7 +13,7 @@
 
 
 #ifndef BLAS_VNRM2_H
-  #ifndef BLAS_VNRM2_H
+  #define BLAS_VNRM2_H
 
 
   #include "esp_attr.h"

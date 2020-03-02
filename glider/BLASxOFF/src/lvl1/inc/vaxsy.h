@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VAXSY_H
-  #ifndef BLAS_VAXSY_H
+  #define BLAS_VAXSY_H
 
 
   #include "esp_attr.h"

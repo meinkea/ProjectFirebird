@@ -5,12 +5,14 @@
 
 #include "../inc/vswap.h"
 
+#include <stddef.h>
 
-void vswap(struct vector * vSrcDstA, const struct vector * vSrcDstB) {
+
+void vswap(struct vector * vSrcDstA, struct vector * vSrcDstB) {
   int flags_temp = 0;
   unsigned int l_temp = 0;
   char * name_temp = NULL;
-  float * v_temp = 0.0;
+  float * v_temp = NULL;
 
   flags_temp       = vSrcDstA->flags;
   l_temp           = vSrcDstA->l;

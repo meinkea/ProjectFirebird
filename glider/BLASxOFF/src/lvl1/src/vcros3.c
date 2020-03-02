@@ -9,9 +9,9 @@
 
 void vcros3(struct vector * vRes, const struct vector * vOprA, const struct vector * vOprB) {
   // Derefence Vector Data
-  float * vRes = vRes->v;
-  float * vA = vOprA->v
-  float * vB = vOprB->v 
+  float * vR = vRes->v;
+  float * vA = vOprA->v;
+  float * vB = vOprB->v ;
 
   // Dereference Vector Operand A
   float vA0 = vA[0];
@@ -24,9 +24,9 @@ void vcros3(struct vector * vRes, const struct vector * vOprA, const struct vect
   float vB2 = vB[2];
 
   // Compute cross product
-  vRes[0] = vA1 * vB2 - vA2 * vB1;
-  vRes[1] = vA2 * vB0 - vA0 * vB2;
-  vRes[2] = vA0 * vB1 - vA1 * vB0;
+  vR[0] = vA1 * vB2 - vA2 * vB1;
+  vR[1] = vA2 * vB0 - vA0 * vB2;
+  vR[2] = vA0 * vB1 - vA1 * vB0;
   return;
 }
 

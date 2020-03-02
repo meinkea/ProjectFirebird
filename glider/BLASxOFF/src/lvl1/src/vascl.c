@@ -11,7 +11,7 @@
 
 
 void vascl(struct vector * vRes, const struct vector * vOpr, const float sclOpr) {
-  array_ascl(vRes->v, vOpr->v, sclOpr, vRes, 0, vRes->l);
+  array_ascl(vRes->v, vOpr->v, sclOpr, 0, vRes->l);
   return;
 }
 

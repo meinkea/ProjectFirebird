@@ -23,7 +23,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_subtract.c"
+  #include "../src/array_subtract.c__"
 
 
 #endif // ARRAY_SUBTRACT_H

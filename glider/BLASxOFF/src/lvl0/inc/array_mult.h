@@ -23,7 +23,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_mult.c"
+  #include "../src/array_mult.c__"
 
 
 #endif // ARRAY_MULT_H

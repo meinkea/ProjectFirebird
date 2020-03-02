@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VSWAP_H
-  #ifndef BLAS_VSWAP_H
+  #define BLAS_VSWAP_H
 
 
   #include "esp_attr.h"
@@ -15,9 +15,8 @@
 
 
   void IRAM_ATTR vswap(
-         struct vector * vRes,
-         const struct vector * vOpr,
-         const float sclOpr
+         struct vector * vScrDstA,
+         struct vector * vScrDstB
       )
          __attribute__((nonull))
   ;

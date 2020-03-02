@@ -4,7 +4,7 @@
 
 
 #ifndef BLAS_VASCL_H
-  #ifndef BLAS_VASCL_H
+  #define BLAS_VASCL_H
 
 
   #include "esp_attr.h"

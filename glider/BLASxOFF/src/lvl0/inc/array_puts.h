@@ -22,7 +22,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_puts.c"
+  #include "../src/array_puts.c__"
 
 
 #endif // ARRAY_PUTS_H

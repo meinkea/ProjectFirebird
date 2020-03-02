@@ -21,7 +21,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_zero.c"
+  #include "../src/array_zero.c__"
 
 
 #endif // ARRAY_SET_H

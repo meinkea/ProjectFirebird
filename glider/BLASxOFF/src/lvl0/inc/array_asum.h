@@ -22,7 +22,7 @@
          __attribute__((nonull));
 
 
-  #include "../src/array_asum.c"
+  #include "../src/array_asum.c__"
 
 
 #endif // ARRAY_ASUM_H
