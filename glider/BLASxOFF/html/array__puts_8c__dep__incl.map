@@ -1,7 +1,6 @@
 <map id="src/lvl0/src/array_puts.c" name="src/lvl0/src/array_puts.c">
-<area shape="rect" id="node2" href="$array__puts_8h.html" title="src/lvl0/inc/array\l_puts.h" alt="" coords="159,95,278,136"/>
+<area shape="rect" id="node2" href="$array__puts_8h.html" title="src/lvl0/inc/array\l_puts.h" alt="" coords="81,95,199,136"/>
 <area shape="rect" id="node3" href="$level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="73,184,207,211"/>
-<area shape="rect" id="node6" href="$vputs_8c.html" title="src/lvl1/src/vputs.c" alt="" coords="232,184,365,211"/>
 <area shape="rect" id="node4" href="$BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="5,259,128,285"/>
 <area shape="rect" id="node5" href="$copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="153,259,277,285"/>
 </map>

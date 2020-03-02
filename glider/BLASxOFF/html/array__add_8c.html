@@ -85,27 +85,15 @@ $(document).ready(function(){initNavTree('array__add_8c.html','');});
 <div class="title">array_add.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="array__add_8c__dep__incl.png" border="0" usemap="#src_2lvl0_2src_2array__add_8cdep" alt=""/></div>
-<map name="src_2lvl0_2src_2array__add_8cdep" id="src_2lvl0_2src_2array__add_8cdep">
-<area shape="rect" id="node2" href="array__add_8h.html" title="src/lvl0/inc/array\l_add.h" alt="" coords="161,95,279,136"/>
-<area shape="rect" id="node3" href="level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="73,184,207,211"/>
-<area shape="rect" id="node6" href="vaxpy_8c.html" title="src/lvl1/src/vaxpy.c" alt="" coords="232,184,368,211"/>
-<area shape="rect" id="node4" href="BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="5,259,128,285"/>
-<area shape="rect" id="node5" href="copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="153,259,277,285"/>
-</map>
-</div>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6a613a41b3215e3b835a6c7e1a73179a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__add_8c.html#a6a613a41b3215e3b835a6c7e1a73179a">array_add</a> (float *arrRes, float *arrOprA, float *arrOprB, unsigned int start, unsigned int end)</td></tr>
-<tr class="separator:a6a613a41b3215e3b835a6c7e1a73179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6187039d26693e108051c0484d4794de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__add_8c.html#a6187039d26693e108051c0484d4794de">array_add</a> (float *arrRes, const float *arrOprA, const float *arrOprB, const unsigned int start, const unsigned int end)</td></tr>
+<tr class="separator:a6187039d26693e108051c0484d4794de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6a613a41b3215e3b835a6c7e1a73179a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a613a41b3215e3b835a6c7e1a73179a">&#9670;&nbsp;</a></span>array_add()</h2>
+<a id="a6187039d26693e108051c0484d4794de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6187039d26693e108051c0484d4794de">&#9670;&nbsp;</a></span>array_add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,25 +107,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>arrOprA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float *&#160;</td>
+          <td class="paramtype">const float *&#160;</td>
           <td class="paramname"><em>arrOprB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
@@ -147,6 +135,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This function add two arrays together element by element </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arrRes</td><td>Array pointer where the result will be stored </td></tr>
+    <tr><td class="paramname">arrOprA</td><td>Array pointer for the 1st operand </td></tr>
+    <tr><td class="paramname">arrOprB</td><td>Array pointer for the 2nd operand </td></tr>
+    <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
+    <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__add_8c_a6187039d26693e108051c0484d4794de_icgraph.png" border="0" usemap="#array__add_8c_a6187039d26693e108051c0484d4794de_icgraph" alt=""/></div>
+<map name="array__add_8c_a6187039d26693e108051c0484d4794de_icgraph" id="array__add_8c_a6187039d26693e108051c0484d4794de_icgraph">
+<area shape="rect" id="node2" href="vaxpy_8c.html#a4d6b8c24caf27503f9baaafb39962bf7" title="vaxpy" alt="" coords="132,5,189,32"/>
+</map>
+</div>
 
 </div>
 </div>

@@ -1,8 +1,6 @@
 <map id="src/lvl0/src/array_print.c" name="src/lvl0/src/array_print.c">
-<area shape="rect" id="node2" href="$array__print_8h.html" title="src/lvl0/inc/array\l_print.h" alt="" coords="285,95,403,136"/>
-<area shape="rect" id="node3" href="$level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="119,184,254,211"/>
-<area shape="rect" id="node6" href="$vprint_8h.html" title="src/lvl1/inc/vprint.h" alt="" coords="278,184,410,211"/>
-<area shape="rect" id="node7" href="$vprint_8c.html" title="src/lvl1/src/vprint.c" alt="" coords="355,259,488,285"/>
+<area shape="rect" id="node2" href="$array__print_8h.html" title="src/lvl0/inc/array\l_print.h" alt="" coords="81,95,199,136"/>
+<area shape="rect" id="node3" href="$level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="73,184,207,211"/>
 <area shape="rect" id="node4" href="$BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="5,259,128,285"/>
 <area shape="rect" id="node5" href="$copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="153,259,277,285"/>
 </map>

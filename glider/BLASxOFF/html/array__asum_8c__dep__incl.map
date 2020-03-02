@@ -1,7 +1,6 @@
 <map id="src/lvl0/src/array_asum.c" name="src/lvl0/src/array_asum.c">
-<area shape="rect" id="node2" href="$array__asum_8h.html" title="src/lvl0/inc/array\l_asum.h" alt="" coords="161,95,279,136"/>
+<area shape="rect" id="node2" href="$array__asum_8h.html" title="src/lvl0/inc/array\l_asum.h" alt="" coords="81,95,199,136"/>
 <area shape="rect" id="node3" href="$level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="73,184,207,211"/>
-<area shape="rect" id="node6" href="$vasum_8c.html" title="src/lvl1/src/vasum.c" alt="" coords="231,184,371,211"/>
 <area shape="rect" id="node4" href="$BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="5,259,128,285"/>
 <area shape="rect" id="node5" href="$copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="153,259,277,285"/>
 </map>

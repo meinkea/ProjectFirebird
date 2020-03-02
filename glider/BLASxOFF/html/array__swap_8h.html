@@ -85,13 +85,13 @@ $(document).ready(function(){initNavTree('array__swap_8h.html','');});
 <div class="title">array_swap.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="matrix_8h_source.html">../../gnd/inc/matrix.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
+<code>#include &quot;../src/array_zero.c__&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_swap.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="array__swap_8h__incl.png" border="0" usemap="#src_2lvl0_2inc_2array__swap_8h" alt=""/></div>
 <map name="src_2lvl0_2inc_2array__swap_8h" id="src_2lvl0_2inc_2array__swap_8h">
-<area shape="rect" id="node2" href="matrix_8h.html" title="../../gnd/inc/matrix.h" alt="" coords="5,95,144,121"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -109,18 +109,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab488781aa76ceabeac5b72fefb0a4db6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#ab488781aa76ceabeac5b72fefb0a4db6">array_swap</a> (float *arrSrcDstA, float *arrSrcDstB)</td></tr>
-<tr class="separator:ab488781aa76ceabeac5b72fefb0a4db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e277982b406c448efdf782e765c264c"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#a7e277982b406c448efdf782e765c264c">array_swap</a> (float *arrSrcDstA, float *arrSrcDstB) __attribute__((always_inline)) __attribute__((nonull))</td></tr>
+<tr class="separator:a7e277982b406c448efdf782e765c264c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab488781aa76ceabeac5b72fefb0a4db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab488781aa76ceabeac5b72fefb0a4db6">&#9670;&nbsp;</a></span>array_swap()</h2>
+<a id="a7e277982b406c448efdf782e765c264c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e277982b406c448efdf782e765c264c">&#9670;&nbsp;</a></span>array_swap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void array_swap </td>
+          <td class="memname">void IRAM_ATTR array_swap </td>
           <td>(</td>
           <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>arrSrcDstA</em>, </td>

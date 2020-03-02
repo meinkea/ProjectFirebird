@@ -1,24 +1,37 @@
 \hypertarget{array__mult_8c}{}\section{src/lvl0/src/array\+\_\+mult.c File Reference}
 \label{array__mult_8c}\index{src/lvl0/src/array\+\_\+mult.\+c@{src/lvl0/src/array\+\_\+mult.\+c}}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{array__mult_8c__dep__incl}
-\end{center}
-\end{figure}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{array__mult_8c_a16579e9b511838286cb56caee9127db8}{array\+\_\+mult} (float $\ast$arr\+Res, const float $\ast$arr\+OprA, const float $\ast$arr\+OprB, const unsigned int start, const unsigned int end, const float scl\+Opr)
+void \hyperlink{array__mult_8c_a5277c8488e3321ea41d8141880f7087a}{array\+\_\+mult} (float $\ast$arr\+Res, const float $\ast$arr\+OprA, const float $\ast$arr\+OprB, const unsigned int start, const unsigned int end)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__mult_8c_a16579e9b511838286cb56caee9127db8}\label{array__mult_8c_a16579e9b511838286cb56caee9127db8}} 
+\mbox{\Hypertarget{array__mult_8c_a5277c8488e3321ea41d8141880f7087a}\label{array__mult_8c_a5277c8488e3321ea41d8141880f7087a}} 
 \index{array\+\_\+mult.\+c@{array\+\_\+mult.\+c}!array\+\_\+mult@{array\+\_\+mult}}
 \index{array\+\_\+mult@{array\+\_\+mult}!array\+\_\+mult.\+c@{array\+\_\+mult.\+c}}
 \subsubsection{\texorpdfstring{array\+\_\+mult()}{array\_mult()}}
-{\footnotesize\ttfamily void array\+\_\+mult (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+OprA,  }\item[{const float $\ast$}]{arr\+OprB,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end,  }\item[{const float}]{scl\+Opr }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void array\+\_\+mult (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+OprA,  }\item[{const float $\ast$}]{arr\+OprB,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
 
+This function multiplies elements of an array by a scalar 
+\begin{DoxyParams}{Parameters}
+{\em arr\+Res} & Array pointer where the result will be stored \\
+\hline
+{\em arr\+OprA} & Array pointer for the 1st operand \\
+\hline
+{\em arr\+OprB} & Array pointer for the 2nd operand \\
+\hline
+{\em start} & Starting element index to loop across \\
+\hline
+{\em end} & Last element index to loop across \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{array__mult_8c_a5277c8488e3321ea41d8141880f7087a_icgraph}
+\end{center}
+\end{figure}
