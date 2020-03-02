@@ -99,12 +99,12 @@ This graph shows which files directly or indirectly include this file:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1f6671eb356f962a5c6936227a1c5d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__set_8c.html#a1f6671eb356f962a5c6936227a1c5d6b">array_set</a> (float *arrDst, const unsigned int start, const unsigned int end, const float sclSrc)</td></tr>
-<tr class="separator:a1f6671eb356f962a5c6936227a1c5d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961b060f1d08c17d7584dccb8e4b6609"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__set_8c.html#a961b060f1d08c17d7584dccb8e4b6609">array_set</a> (float *arrDst, const float sclSrc, const unsigned int start, const unsigned int end)</td></tr>
+<tr class="separator:a961b060f1d08c17d7584dccb8e4b6609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1f6671eb356f962a5c6936227a1c5d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f6671eb356f962a5c6936227a1c5d6b">&#9670;&nbsp;</a></span>array_set()</h2>
+<a id="a961b060f1d08c17d7584dccb8e4b6609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961b060f1d08c17d7584dccb8e4b6609">&#9670;&nbsp;</a></span>array_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,6 +118,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>sclSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
@@ -125,13 +131,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>sclSrc</em>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -144,9 +144,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">arrDst</td><td>Array pointer where the result will be stored </td></tr>
+    <tr><td class="paramname">sclSrc</td><td>Float for the source scalar </td></tr>
     <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
     <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
-    <tr><td class="paramname">sclSrc</td><td>Float for the source scalar </td></tr>
   </table>
   </dd>
 </dl>

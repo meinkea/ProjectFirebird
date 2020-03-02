@@ -90,9 +90,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="array__mscl_8c__dep__incl.png" border="0" usemap="#src_2lvl0_2src_2array__mscl_8cdep" alt=""/></div>
 <map name="src_2lvl0_2src_2array__mscl_8cdep" id="src_2lvl0_2src_2array__mscl_8cdep">
-<area shape="rect" id="node2" href="array__mscl_8h.html" title="src/lvl0/inc/array\l_mscl.h" alt="" coords="81,95,199,136"/>
-<area shape="rect" id="node6" href="array__zero_8h.html" title="src/lvl0/inc/array\l_zero.h" alt="" coords="223,95,342,136"/>
+<area shape="rect" id="node2" href="array__mscl_8h.html" title="src/lvl0/inc/array\l_mscl.h" alt="" coords="161,95,279,136"/>
 <area shape="rect" id="node3" href="level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="73,184,207,211"/>
+<area shape="rect" id="node6" href="vmscl_8c.html" title="src/lvl1/src/vmscl.c" alt="" coords="232,184,368,211"/>
 <area shape="rect" id="node4" href="BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="5,259,128,285"/>
 <area shape="rect" id="node5" href="copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="153,259,277,285"/>
 </map>
@@ -100,12 +100,12 @@ This graph shows which files directly or indirectly include this file:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a928ba9db49d5cdecbbbbb4388047fdb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__mscl_8c.html#a928ba9db49d5cdecbbbbb4388047fdb1">array_mscl</a> (float *arrRes, const float *arrOpr, const unsigned int start, const unsigned int end, const float sclOpr)</td></tr>
-<tr class="separator:a928ba9db49d5cdecbbbbb4388047fdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5768da9b84a7328a06cf2fec07e752de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__mscl_8c.html#a5768da9b84a7328a06cf2fec07e752de">array_mscl</a> (float *arrRes, const float *arrOpr, const float sclOpr, const unsigned int start, const unsigned int end)</td></tr>
+<tr class="separator:a5768da9b84a7328a06cf2fec07e752de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a928ba9db49d5cdecbbbbb4388047fdb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a928ba9db49d5cdecbbbbb4388047fdb1">&#9670;&nbsp;</a></span>array_mscl()</h2>
+<a id="a5768da9b84a7328a06cf2fec07e752de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5768da9b84a7328a06cf2fec07e752de">&#9670;&nbsp;</a></span>array_mscl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,6 +125,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>sclOpr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
@@ -132,13 +138,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>sclOpr</em>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,12 +152,20 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">arrRes</td><td>Array pointer where the result will be stored </td></tr>
     <tr><td class="paramname">arrOpr</td><td>Array pointer for the 1st operand </td></tr>
+    <tr><td class="paramname">sclOpr</td><td>float for the 2nd Scalar operand </td></tr>
     <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
     <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
-    <tr><td class="paramname">sclOpr</td><td>float for the 2nd Scalar operand </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de_icgraph.png" border="0" usemap="#array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de_icgraph" alt=""/></div>
+<map name="array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de_icgraph" id="array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de_icgraph">
+<area shape="rect" id="node2" href="vmscl_8c.html#a85cb0aa881c60041aecf825a054c3005" title="vmscl" alt="" coords="140,5,197,32"/>
+</map>
+</div>
 
 </div>
 </div>

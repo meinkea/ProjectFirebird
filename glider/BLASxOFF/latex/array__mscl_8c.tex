@@ -5,22 +5,22 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=333pt]{array__mscl_8c__dep__incl}
+\includegraphics[width=350pt]{array__mscl_8c__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{array__mscl_8c_a928ba9db49d5cdecbbbbb4388047fdb1}{array\+\_\+mscl} (float $\ast$arr\+Res, const float $\ast$arr\+Opr, const unsigned int start, const unsigned int end, const float scl\+Opr)
+void \hyperlink{array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de}{array\+\_\+mscl} (float $\ast$arr\+Res, const float $\ast$arr\+Opr, const float scl\+Opr, const unsigned int start, const unsigned int end)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__mscl_8c_a928ba9db49d5cdecbbbbb4388047fdb1}\label{array__mscl_8c_a928ba9db49d5cdecbbbbb4388047fdb1}} 
+\mbox{\Hypertarget{array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de}\label{array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de}} 
 \index{array\+\_\+mscl.\+c@{array\+\_\+mscl.\+c}!array\+\_\+mscl@{array\+\_\+mscl}}
 \index{array\+\_\+mscl@{array\+\_\+mscl}!array\+\_\+mscl.\+c@{array\+\_\+mscl.\+c}}
 \subsubsection{\texorpdfstring{array\+\_\+mscl()}{array\_mscl()}}
-{\footnotesize\ttfamily void array\+\_\+mscl (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+Opr,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end,  }\item[{const float}]{scl\+Opr }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void array\+\_\+mscl (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+Opr,  }\item[{const float}]{scl\+Opr,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
 
 This function multiplies each element of an array by a scalar 
 \begin{DoxyParams}{Parameters}
@@ -28,10 +28,18 @@ This function multiplies each element of an array by a scalar
 \hline
 {\em arr\+Opr} & Array pointer for the 1st operand \\
 \hline
+{\em scl\+Opr} & float for the 2nd Scalar operand \\
+\hline
 {\em start} & Starting element index to loop across \\
 \hline
 {\em end} & Last element index to loop across \\
 \hline
-{\em scl\+Opr} & float for the 2nd Scalar operand \\
-\hline
 \end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{array__mscl_8c_a5768da9b84a7328a06cf2fec07e752de_icgraph}
+\end{center}
+\end{figure}

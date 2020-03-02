@@ -87,19 +87,22 @@ $(document).ready(function(){initNavTree('array__print_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_print.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="array__print_8c__incl.png" border="0" usemap="#src_2lvl0_2src_2array__print_8c" alt=""/></div>
+<map name="src_2lvl0_2src_2array__print_8c" id="src_2lvl0_2src_2array__print_8c">
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="array__print_8c__dep__incl.png" border="0" usemap="#src_2lvl0_2src_2array__print_8cdep" alt=""/></div>
 <map name="src_2lvl0_2src_2array__print_8cdep" id="src_2lvl0_2src_2array__print_8cdep">
-<area shape="rect" id="node2" href="array__print_8h.html" title="src/lvl0/inc/array\l_print.h" alt="" coords="81,95,199,136"/>
-<area shape="rect" id="node3" href="level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="73,184,207,211"/>
+<area shape="rect" id="node2" href="array__print_8h.html" title="src/lvl0/inc/array\l_print.h" alt="" coords="285,95,403,136"/>
+<area shape="rect" id="node3" href="level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="119,184,254,211"/>
+<area shape="rect" id="node6" href="vprint_8h.html" title="src/lvl1/inc/vprint.h" alt="" coords="278,184,410,211"/>
+<area shape="rect" id="node7" href="vprint_8c.html" title="src/lvl1/src/vprint.c" alt="" coords="355,259,488,285"/>
 <area shape="rect" id="node4" href="BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="5,259,128,285"/>
 <area shape="rect" id="node5" href="copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="153,259,277,285"/>
 </map>
@@ -107,42 +110,175 @@ This graph shows which files directly or indirectly include this file:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a007a2fb2e0794c0dd32fd35483945fff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a007a2fb2e0794c0dd32fd35483945fff">BLAS_PRINT_MAX_WHOLE</a></td></tr>
-<tr class="separator:a007a2fb2e0794c0dd32fd35483945fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75e0dc77a197d869e71ac94ddf931f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#ab75e0dc77a197d869e71ac94ddf931f0">BLAS_PRINT_MAX_LEADING_TO_PRINT</a>&#160;&#160;&#160;9</td></tr>
-<tr class="memdesc:ab75e0dc77a197d869e71ac94ddf931f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the number of leading digits before concidered Infinite.  <a href="#ab75e0dc77a197d869e71ac94ddf931f0">More...</a><br /></td></tr>
-<tr class="separator:ab75e0dc77a197d869e71ac94ddf931f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ba509e2af126c3927c20f1ea0f5008"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a07ba509e2af126c3927c20f1ea0f5008">BLAS_PRINT_CONST</a></td></tr>
+<tr class="separator:a07ba509e2af126c3927c20f1ea0f5008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56c662160b4c134bcec01136b90498f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#af56c662160b4c134bcec01136b90498f">BLAS_PRINT_MAX_NUM</a>&#160;&#160;&#160;9999.0f</td></tr>
+<tr class="separator:af56c662160b4c134bcec01136b90498f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf962de0737c0a8874e6b38aa9a6039"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#acbf962de0737c0a8874e6b38aa9a6039">BLAS_PRINT_MIN_NUM</a>&#160;&#160;&#160;0.0001f</td></tr>
+<tr class="separator:acbf962de0737c0a8874e6b38aa9a6039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14397dc3f9160b3797523b7225139bea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a14397dc3f9160b3797523b7225139bea">BLAS_PRINT_WHL_MAX_DIGITS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a14397dc3f9160b3797523b7225139bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7171940489d45f1cc5a2f919c32d9204"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a7171940489d45f1cc5a2f919c32d9204">BLAS_PRINT_DEC_MAX_DIGITS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a7171940489d45f1cc5a2f919c32d9204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21158c8a49dea532173cbc6d15849724"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a21158c8a49dea532173cbc6d15849724">BLAS_PRINT_WHL_MODL</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a21158c8a49dea532173cbc6d15849724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd77332534efcac9ceb86621787e1e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a2dd77332534efcac9ceb86621787e1e2">BLAS_PRINT_DEC_MODL</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a2dd77332534efcac9ceb86621787e1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a341fe90e9ee059d66162d8f9a5f137"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a5a341fe90e9ee059d66162d8f9a5f137">BLAS_PRINT_ARRAY__NUM_DIGITS</a>&#160;&#160;&#160;(<a class="el" href="array__print_8c.html#a14397dc3f9160b3797523b7225139bea">BLAS_PRINT_WHL_MAX_DIGITS</a>+1+<a class="el" href="array__print_8c.html#a7171940489d45f1cc5a2f919c32d9204">BLAS_PRINT_DEC_MAX_DIGITS</a>+1)</td></tr>
+<tr class="separator:a5a341fe90e9ee059d66162d8f9a5f137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0d7e50e0e3889e236b9e3805d44f2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a2c0d7e50e0e3889e236b9e3805d44f2b">DECIMAL_INDEX</a>&#160;&#160;&#160;(<a class="el" href="array__print_8c.html#a14397dc3f9160b3797523b7225139bea">BLAS_PRINT_WHL_MAX_DIGITS</a>+1)</td></tr>
+<tr class="separator:a2c0d7e50e0e3889e236b9e3805d44f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351913c7763f4584bf65f450efef4bfa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a351913c7763f4584bf65f450efef4bfa">CHAR_0_</a>&#160;&#160;&#160;48</td></tr>
+<tr class="separator:a351913c7763f4584bf65f450efef4bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa0a3bbbb7210d6559a909251ceb5c1eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#aa0a3bbbb7210d6559a909251ceb5c1eb">array_print</a> (char *string, const float *arrSrc, const unsigned int start, const unsigned int end)</td></tr>
-<tr class="separator:aa0a3bbbb7210d6559a909251ceb5c1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cb01b22a0cf894bc4b8ad803687a5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#af3cb01b22a0cf894bc4b8ad803687a5c">check_limits</a> (float num, char *buf)</td></tr>
+<tr class="separator:af3cb01b22a0cf894bc4b8ad803687a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7fce0d23d4a9bcb94f55a5ffe8e611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#aca7fce0d23d4a9bcb94f55a5ffe8e611">clear_string</a> (char *buf)</td></tr>
+<tr class="separator:aca7fce0d23d4a9bcb94f55a5ffe8e611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9f6b236eb0c51fe8208f8d673589a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a5f9f6b236eb0c51fe8208f8d673589a0">place_decimal</a> (char *buf)</td></tr>
+<tr class="separator:a5f9f6b236eb0c51fe8208f8d673589a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327e772b44d609b6b0bdd9cdbd8e7601"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#a327e772b44d609b6b0bdd9cdbd8e7601">get_num_sign</a> (float num)</td></tr>
+<tr class="separator:a327e772b44d609b6b0bdd9cdbd8e7601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb92aa891ee959bce6099c0d824067da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__print_8c.html#abb92aa891ee959bce6099c0d824067da">array_print</a> (char *buf, const float sclSrc)</td></tr>
+<tr class="separator:abb92aa891ee959bce6099c0d824067da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ab75e0dc77a197d869e71ac94ddf931f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab75e0dc77a197d869e71ac94ddf931f0">&#9670;&nbsp;</a></span>BLAS_PRINT_MAX_LEADING_TO_PRINT</h2>
+<a id="a5a341fe90e9ee059d66162d8f9a5f137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a341fe90e9ee059d66162d8f9a5f137">&#9670;&nbsp;</a></span>BLAS_PRINT_ARRAY__NUM_DIGITS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLAS_PRINT_MAX_LEADING_TO_PRINT&#160;&#160;&#160;9</td>
+          <td class="memname">#define BLAS_PRINT_ARRAY__NUM_DIGITS&#160;&#160;&#160;(<a class="el" href="array__print_8c.html#a14397dc3f9160b3797523b7225139bea">BLAS_PRINT_WHL_MAX_DIGITS</a>+1+<a class="el" href="array__print_8c.html#a7171940489d45f1cc5a2f919c32d9204">BLAS_PRINT_DEC_MAX_DIGITS</a>+1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Specifies the number of leading digits before concidered Infinite. </p>
-
 </div>
 </div>
-<a id="a007a2fb2e0794c0dd32fd35483945fff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a007a2fb2e0794c0dd32fd35483945fff">&#9670;&nbsp;</a></span>BLAS_PRINT_MAX_WHOLE</h2>
+<a id="a07ba509e2af126c3927c20f1ea0f5008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ba509e2af126c3927c20f1ea0f5008">&#9670;&nbsp;</a></span>BLAS_PRINT_CONST</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLAS_PRINT_MAX_WHOLE</td>
+          <td class="memname">#define BLAS_PRINT_CONST</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7171940489d45f1cc5a2f919c32d9204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7171940489d45f1cc5a2f919c32d9204">&#9670;&nbsp;</a></span>BLAS_PRINT_DEC_MAX_DIGITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLAS_PRINT_DEC_MAX_DIGITS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2dd77332534efcac9ceb86621787e1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd77332534efcac9ceb86621787e1e2">&#9670;&nbsp;</a></span>BLAS_PRINT_DEC_MODL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLAS_PRINT_DEC_MODL&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af56c662160b4c134bcec01136b90498f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56c662160b4c134bcec01136b90498f">&#9670;&nbsp;</a></span>BLAS_PRINT_MAX_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLAS_PRINT_MAX_NUM&#160;&#160;&#160;9999.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbf962de0737c0a8874e6b38aa9a6039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf962de0737c0a8874e6b38aa9a6039">&#9670;&nbsp;</a></span>BLAS_PRINT_MIN_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLAS_PRINT_MIN_NUM&#160;&#160;&#160;0.0001f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14397dc3f9160b3797523b7225139bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14397dc3f9160b3797523b7225139bea">&#9670;&nbsp;</a></span>BLAS_PRINT_WHL_MAX_DIGITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLAS_PRINT_WHL_MAX_DIGITS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21158c8a49dea532173cbc6d15849724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21158c8a49dea532173cbc6d15849724">&#9670;&nbsp;</a></span>BLAS_PRINT_WHL_MODL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLAS_PRINT_WHL_MODL&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a351913c7763f4584bf65f450efef4bfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351913c7763f4584bf65f450efef4bfa">&#9670;&nbsp;</a></span>CHAR_0_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHAR_0_&#160;&#160;&#160;48</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c0d7e50e0e3889e236b9e3805d44f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0d7e50e0e3889e236b9e3805d44f2b">&#9670;&nbsp;</a></span>DECIMAL_INDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECIMAL_INDEX&#160;&#160;&#160;(<a class="el" href="array__print_8c.html#a14397dc3f9160b3797523b7225139bea">BLAS_PRINT_WHL_MAX_DIGITS</a>+1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -150,8 +286,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa0a3bbbb7210d6559a909251ceb5c1eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a3bbbb7210d6559a909251ceb5c1eb">&#9670;&nbsp;</a></span>array_print()</h2>
+<a id="abb92aa891ee959bce6099c0d824067da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb92aa891ee959bce6099c0d824067da">&#9670;&nbsp;</a></span>array_print()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,25 +296,13 @@ Functions</h2></td></tr>
           <td class="memname">void array_print </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>string</em>, </td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>arrSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>sclSrc</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -187,16 +311,150 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a pointer to a printable string of the data in a Vector </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">string</td><td>Pointer to string buffer for printing </td></tr>
-    <tr><td class="paramname">arrSrc</td><td>Array pointer for source data </td></tr>
-    <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
-    <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to string buffer for printing </td></tr>
+    <tr><td class="paramname">sclSrc</td><td>Array pointer for source data </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__print_8c_abb92aa891ee959bce6099c0d824067da_cgraph.png" border="0" usemap="#array__print_8c_abb92aa891ee959bce6099c0d824067da_cgraph" alt=""/></div>
+<map name="array__print_8c_abb92aa891ee959bce6099c0d824067da_cgraph" id="array__print_8c_abb92aa891ee959bce6099c0d824067da_cgraph">
+<area shape="rect" id="node2" href="array__print_8c.html#af3cb01b22a0cf894bc4b8ad803687a5c" title="check_limits" alt="" coords="141,5,236,32"/>
+<area shape="rect" id="node3" href="array__print_8c.html#aca7fce0d23d4a9bcb94f55a5ffe8e611" title="clear_string" alt="" coords="144,56,233,83"/>
+<area shape="rect" id="node4" href="array__print_8c.html#a5f9f6b236eb0c51fe8208f8d673589a0" title="place_decimal" alt="" coords="136,107,241,133"/>
+<area shape="rect" id="node5" href="array__print_8c.html#a327e772b44d609b6b0bdd9cdbd8e7601" title="get_num_sign" alt="" coords="137,157,240,184"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__print_8c_abb92aa891ee959bce6099c0d824067da_icgraph.png" border="0" usemap="#array__print_8c_abb92aa891ee959bce6099c0d824067da_icgraph" alt=""/></div>
+<map name="array__print_8c_abb92aa891ee959bce6099c0d824067da_icgraph" id="array__print_8c_abb92aa891ee959bce6099c0d824067da_icgraph">
+<area shape="rect" id="node2" href="vprint_8c.html#ada16f5c2cce1f698c15ea60163471f05" title="vprint" alt="" coords="136,5,191,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3cb01b22a0cf894bc4b8ad803687a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cb01b22a0cf894bc4b8ad803687a5c">&#9670;&nbsp;</a></span>check_limits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int check_limits </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__print_8c_af3cb01b22a0cf894bc4b8ad803687a5c_icgraph.png" border="0" usemap="#array__print_8c_af3cb01b22a0cf894bc4b8ad803687a5c_icgraph" alt=""/></div>
+<map name="array__print_8c_af3cb01b22a0cf894bc4b8ad803687a5c_icgraph" id="array__print_8c_af3cb01b22a0cf894bc4b8ad803687a5c_icgraph">
+<area shape="rect" id="node2" href="array__print_8c.html#abb92aa891ee959bce6099c0d824067da" title="array_print" alt="" coords="148,5,231,32"/>
+<area shape="rect" id="node3" href="vprint_8c.html#ada16f5c2cce1f698c15ea60163471f05" title="vprint" alt="" coords="279,5,333,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca7fce0d23d4a9bcb94f55a5ffe8e611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7fce0d23d4a9bcb94f55a5ffe8e611">&#9670;&nbsp;</a></span>clear_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear_string </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__print_8c_aca7fce0d23d4a9bcb94f55a5ffe8e611_icgraph.png" border="0" usemap="#array__print_8c_aca7fce0d23d4a9bcb94f55a5ffe8e611_icgraph" alt=""/></div>
+<map name="array__print_8c_aca7fce0d23d4a9bcb94f55a5ffe8e611_icgraph" id="array__print_8c_aca7fce0d23d4a9bcb94f55a5ffe8e611_icgraph">
+<area shape="rect" id="node2" href="array__print_8c.html#abb92aa891ee959bce6099c0d824067da" title="array_print" alt="" coords="143,5,225,32"/>
+<area shape="rect" id="node3" href="vprint_8c.html#ada16f5c2cce1f698c15ea60163471f05" title="vprint" alt="" coords="273,5,328,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a327e772b44d609b6b0bdd9cdbd8e7601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327e772b44d609b6b0bdd9cdbd8e7601">&#9670;&nbsp;</a></span>get_num_sign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char get_num_sign </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__print_8c_a327e772b44d609b6b0bdd9cdbd8e7601_icgraph.png" border="0" usemap="#array__print_8c_a327e772b44d609b6b0bdd9cdbd8e7601_icgraph" alt=""/></div>
+<map name="array__print_8c_a327e772b44d609b6b0bdd9cdbd8e7601_icgraph" id="array__print_8c_a327e772b44d609b6b0bdd9cdbd8e7601_icgraph">
+<area shape="rect" id="node2" href="array__print_8c.html#abb92aa891ee959bce6099c0d824067da" title="array_print" alt="" coords="156,5,239,32"/>
+<area shape="rect" id="node3" href="vprint_8c.html#ada16f5c2cce1f698c15ea60163471f05" title="vprint" alt="" coords="287,5,341,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f9f6b236eb0c51fe8208f8d673589a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9f6b236eb0c51fe8208f8d673589a0">&#9670;&nbsp;</a></span>place_decimal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void place_decimal </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="array__print_8c_a5f9f6b236eb0c51fe8208f8d673589a0_icgraph.png" border="0" usemap="#array__print_8c_a5f9f6b236eb0c51fe8208f8d673589a0_icgraph" alt=""/></div>
+<map name="array__print_8c_a5f9f6b236eb0c51fe8208f8d673589a0_icgraph" id="array__print_8c_a5f9f6b236eb0c51fe8208f8d673589a0_icgraph">
+<area shape="rect" id="node2" href="array__print_8c.html#abb92aa891ee959bce6099c0d824067da" title="array_print" alt="" coords="159,5,241,32"/>
+<area shape="rect" id="node3" href="vprint_8c.html#ada16f5c2cce1f698c15ea60163471f05" title="vprint" alt="" coords="289,5,344,32"/>
+</map>
+</div>
 
 </div>
 </div>

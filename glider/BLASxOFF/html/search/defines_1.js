@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['m_5fallocated_5ff',['M_ALLOCATED_F',['../inc_2matrix_8h.html#ac07aef2092efa03fbc087947d3abcba2',1,'M_ALLOCATED_F():&#160;matrix.h'],['../matrix_8h.html#ac07aef2092efa03fbc087947d3abcba2',1,'M_ALLOCATED_F():&#160;matrix.h']]]
+  ['char_5f0_5f',['CHAR_0_',['../array__print_8c.html#a351913c7763f4584bf65f450efef4bfa',1,'array_print.c']]]
 ];

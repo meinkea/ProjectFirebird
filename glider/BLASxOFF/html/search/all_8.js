@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['v',['v',['../structvector.html#a83630325b605afe4bf7532c82b86940d',1,'vector']]],
-  ['v_5fallocated_5ff',['V_ALLOCATED_F',['../inc_2vector_8h.html#a2566a6db3451171a78842272d28e9373',1,'V_ALLOCATED_F():&#160;vector.h'],['../vector_8h.html#a2566a6db3451171a78842272d28e9373',1,'V_ALLOCATED_F():&#160;vector.h']]],
-  ['vector',['vector',['../structvector.html',1,'']]],
-  ['vector_2ec',['vector.c',['../vector_8c.html',1,'']]],
-  ['vector_2eh',['vector.h',['../inc_2vector_8h.html',1,'(Global Namespace)'],['../vector_8h.html',1,'(Global Namespace)']]]
+  ['name',['name',['../structmatrix.html#a4b4ce5bf34789557b86c3c501790b72e',1,'matrix::name()'],['../structvector.html#aa03a1f4dcbfcd7b3f2e3393234dbc4a2',1,'vector::name()']]],
+  ['new_5fmatrix',['new_matrix',['../matrix_8h.html#a11394bf5c56be5e0348b6460f0d04aa0',1,'new_matrix():&#160;matrix.c'],['../matrix_8c.html#a11394bf5c56be5e0348b6460f0d04aa0',1,'new_matrix():&#160;matrix.c']]],
+  ['new_5fvector',['new_vector',['../vector_8h.html#ae0d8044d4d9327f9ecae82ae077e57ea',1,'new_vector():&#160;vector.c'],['../vector_8c.html#ae0d8044d4d9327f9ecae82ae077e57ea',1,'new_vector():&#160;vector.c']]]
 ];

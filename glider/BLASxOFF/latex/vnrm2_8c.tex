@@ -1,0 +1,32 @@
+\hypertarget{vnrm2_8c}{}\section{src/lvl1/src/vnrm2.c File Reference}
+\label{vnrm2_8c}\index{src/lvl1/src/vnrm2.\+c@{src/lvl1/src/vnrm2.\+c}}
+{\ttfamily \#include \char`\"{}../inc/vnrm2.\+h\char`\"{}}\newline
+Include dependency graph for vnrm2.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{vnrm2_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{vnrm2_8c_a5c59f4b1776924af00fad7689ddeaa9e}{vnrm2} (float $\ast$scl\+Res, const struct \hyperlink{structvector}{vector} $\ast$v\+OprA, const struct \hyperlink{structvector}{vector} $\ast$v\+OprB)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vnrm2_8c_a5c59f4b1776924af00fad7689ddeaa9e}\label{vnrm2_8c_a5c59f4b1776924af00fad7689ddeaa9e}} 
+\index{vnrm2.\+c@{vnrm2.\+c}!vnrm2@{vnrm2}}
+\index{vnrm2@{vnrm2}!vnrm2.\+c@{vnrm2.\+c}}
+\subsubsection{\texorpdfstring{vnrm2()}{vnrm2()}}
+{\footnotesize\ttfamily void vnrm2 (\begin{DoxyParamCaption}\item[{float $\ast$}]{scl\+Res,  }\item[{const struct \hyperlink{structvector}{vector} $\ast$}]{v\+OprA,  }\item[{const struct \hyperlink{structvector}{vector} $\ast$}]{v\+OprB }\end{DoxyParamCaption})}
+
+Robust Euclidean norm computation
+
+Robust computation for computing the L2 (Euclidean) norm. While not impervious, this method resist Overflows and Underflows
+
+C equivalent to L\+A\+P\+A\+CK\textquotesingle{}s S\+N\+M\+R2 routine Sauce\+: \href{http://www.netlib.org/lapack/explore-html/d7/df1/snrm2_8f_source.html}{\tt http\+://www.\+netlib.\+org/lapack/explore-\/html/d7/df1/snrm2\+\_\+8f\+\_\+source.\+html}
+
+notes\+: L\+A\+P\+A\+CK\textquotesingle{}s S\+N\+M\+R2 routine is equivalent S\+L\+A\+S\+SQ 

@@ -1,3 +1,8 @@
-<map id="src/gnd/matrix.h" name="src/gnd/matrix.h">
-<area shape="rect" id="node2" href="$BLAS__datatypes_8h.html" title="src/gnd/BLAS_datatypes.h" alt="" coords="5,80,184,107"/>
+<map id="src/gnd/inc/matrix.h" name="src/gnd/inc/matrix.h">
+<area shape="rect" id="node2" href="$BLAS__datatypes_8h.html" title="src/gnd/inc/BLAS_datatypes.h" alt="" coords="5,169,204,196"/>
+<area shape="rect" id="node5" href="$array__swap_8h.html" title="src/lvl0/inc/array\l_swap.h" alt="" coords="212,80,331,121"/>
+<area shape="rect" id="node7" href="$matrix_8c.html" title="src/gnd/src/matrix.c" alt="" coords="355,87,494,114"/>
+<area shape="rect" id="node3" href="$BLASxOFF_8h.html" title="src/BLASxOFF.h" alt="" coords="65,244,187,271"/>
+<area shape="rect" id="node4" href="$copy__BLAS_8h.html" title="src/copy_BLAS.h" alt="" coords="223,244,347,271"/>
+<area shape="rect" id="node6" href="$level0_8h.html" title="src/lvl0/inc/level0.h" alt="" coords="228,169,363,196"/>
 </map>
