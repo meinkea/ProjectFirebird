@@ -8,6 +8,5 @@ var searchData=
   ['blas_5fprint_5fmin_5fnum',['BLAS_PRINT_MIN_NUM',['../array__print_8h.html#acbf962de0737c0a8874e6b38aa9a6039',1,'array_print.h']]],
   ['blas_5fprint_5fwhl_5fmax_5fdigits',['BLAS_PRINT_WHL_MAX_DIGITS',['../array__print_8h.html#a14397dc3f9160b3797523b7225139bea',1,'array_print.h']]],
   ['blas_5fprint_5fwhl_5fmodl',['BLAS_PRINT_WHL_MODL',['../array__print_8h.html#a21158c8a49dea532173cbc6d15849724',1,'array_print.h']]],
-  ['blasxoff_2eh',['BLASxOFF.h',['../BLASxOFF_8h.html',1,'']]],
-  ['buf',['buf',['../array__print_8h.html#a5f36c3d339c451e2c76b6303b83e970c',1,'array_print.h']]]
+  ['blasxoff_2eh',['BLASxOFF.h',['../BLASxOFF_8h.html',1,'']]]
 ];

@@ -80,7 +80,8 @@ $(document).ready(function(){initNavTree('array__swap_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">array_swap.h File Reference</div>  </div>
 </div><!--header-->
@@ -108,20 +109,24 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3f568bfbd4fde500e67a7d1ea14a114f"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#a3f568bfbd4fde500e67a7d1ea14a114f">__attribute__</a> ((always_inline)) __attribute__((nonull))</td></tr>
-<tr class="separator:a3f568bfbd4fde500e67a7d1ea14a114f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef3a7fbae6a0718e81fc59f1bf6f4b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#afef3a7fbae6a0718e81fc59f1bf6f4b2">array_swap</a> (float *arrSrcDstA, float *arrSrcDstB)</td></tr>
-<tr class="separator:afef3a7fbae6a0718e81fc59f1bf6f4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e028e05235dd050c3da6f604ae22fd"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#ac2e028e05235dd050c3da6f604ae22fd">__attribute__</a> ((always_inline)) __attribute__((nonull)) array_swap(float *<a class="el" href="array__swap_8h.html#afbf35f33b730696364a33663ecc97c06">arrSrcDstA</a></td></tr>
+<tr class="separator:ac2e028e05235dd050c3da6f604ae22fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4916c4f9ec623c8a595e3282283c2c4c"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#a4916c4f9ec623c8a595e3282283c2c4c">arrSrcDstB</a></td></tr>
+<tr class="separator:a4916c4f9ec623c8a595e3282283c2c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf35f33b730696364a33663ecc97c06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#afbf35f33b730696364a33663ecc97c06">arrSrcDstA</a> = <a class="el" href="array__swap_8h.html#a4916c4f9ec623c8a595e3282283c2c4c">arrSrcDstB</a></td></tr>
+<tr class="separator:afbf35f33b730696364a33663ecc97c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9717e7bbecb906637e86cef6da3d83c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#a9717e7bbecb906637e86cef6da3d83c2">return</a></td></tr>
+<tr class="separator:a9717e7bbecb906637e86cef6da3d83c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3f568bfbd4fde500e67a7d1ea14a114f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f568bfbd4fde500e67a7d1ea14a114f">&#9670;&nbsp;</a></span>__attribute__()</h2>
+<a id="ac2e028e05235dd050c3da6f604ae22fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e028e05235dd050c3da6f604ae22fd">&#9670;&nbsp;</a></span>__attribute__()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void IRAM_ATTR __attribute__ </td>
@@ -131,51 +136,49 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>This function swap two arrays together element by element</p>
-<p>This function add two arrays together element by element</p>
-<p>This function adds a scalar too each element in an array</p>
-<ul>
-<li>This function is deliberatly placed in Instruction RAM. Meaning that this function will always remained cached.</li>
-<li>the <b>attribute</b>((always_inline)) tells the compiler to ALWAYS inline to function reguardless of optimization levels</li>
-<li>the <b>attribute</b>((nonull)) tells the compiler that the function's pointer arguments cannot bell NULL</li>
-</ul>
-<p>This function adds all the elements in an array and returns the sum</p>
-<p>This function copies the elements of one arrays into another array</p>
-<p>This function computes the dot product between two arrays</p>
-<p>This function multiplies each element of an array by a scalar</p>
-<p>This function multiplies elements of an array by a scalar</p>
-<p>This function Zeros the elements in an array </p>
+<p>This function swap two arrays together element by element </p>
 
 </div>
 </div>
-<a id="afef3a7fbae6a0718e81fc59f1bf6f4b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afef3a7fbae6a0718e81fc59f1bf6f4b2">&#9670;&nbsp;</a></span>array_swap()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="afbf35f33b730696364a33663ecc97c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf35f33b730696364a33663ecc97c06">&#9670;&nbsp;</a></span>arrSrcDstA</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">array_swap </td>
-          <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>arrSrcDstA</em>, </td>
+          <td class="memname">arrSrcDstA = <a class="el" href="array__swap_8h.html#a4916c4f9ec623c8a595e3282283c2c4c">arrSrcDstB</a></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4916c4f9ec623c8a595e3282283c2c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4916c4f9ec623c8a595e3282283c2c4c">&#9670;&nbsp;</a></span>arrSrcDstB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>arrSrcDstB</em>&#160;</td>
+          <td class="memname">arrSrcDstB</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordtype">float</span> * temp = <a class="code" href="array__swap_8h.html#afbf35f33b730696364a33663ecc97c06">arrSrcDstA</a></div><div class="ttc" id="array__swap_8h_html_afbf35f33b730696364a33663ecc97c06"><div class="ttname"><a href="array__swap_8h.html#afbf35f33b730696364a33663ecc97c06">arrSrcDstA</a></div><div class="ttdeci">arrSrcDstA</div><div class="ttdef"><b>Definition:</b> array_swap.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9717e7bbecb906637e86cef6da3d83c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9717e7bbecb906637e86cef6da3d83c2">&#9670;&nbsp;</a></span>return</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">return</td>
         </tr>
       </table>
 </div><div class="memdoc">

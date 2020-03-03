@@ -4,6 +4,5 @@ var searchData=
   ['m_5fallocated_5ff',['M_ALLOCATED_F',['../matrix_8h.html#ac07aef2092efa03fbc087947d3abcba2',1,'matrix.h']]],
   ['matrix',['matrix',['../structmatrix.html',1,'']]],
   ['matrix_2ec',['matrix.c',['../matrix_8c.html',1,'']]],
-  ['matrix_2eh',['matrix.h',['../matrix_8h.html',1,'']]],
-  ['modl',['modl',['../array__print_8h.html#a40c60f6ea1733736ab53581638d883ec',1,'array_print.h']]]
+  ['matrix_2eh',['matrix.h',['../matrix_8h.html',1,'']]]
 ];

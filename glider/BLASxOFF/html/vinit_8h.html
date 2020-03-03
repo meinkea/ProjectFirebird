@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AHRS: src/lvl1/inc/vinit.h File Reference</title>
+<title>AHRS: src/gnd/inc/vinit.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,22 +86,22 @@ $(document).ready(function(){initNavTree('vinit_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="vector_8h_source.html">../../gnd/inc/vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vector_8h_source.html">vector.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for vinit.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="vinit_8h__incl.png" border="0" usemap="#src_2lvl1_2inc_2vinit_8h" alt=""/></div>
-<map name="src_2lvl1_2inc_2vinit_8h" id="src_2lvl1_2inc_2vinit_8h">
-<area shape="rect" id="node3" href="vector_8h.html" title="../../gnd/inc/vector.h" alt="" coords="109,80,248,107"/>
+<div class="center"><img src="vinit_8h__incl.png" border="0" usemap="#src_2gnd_2inc_2vinit_8h" alt=""/></div>
+<map name="src_2gnd_2inc_2vinit_8h" id="src_2gnd_2inc_2vinit_8h">
+<area shape="rect" id="node3" href="vector_8h.html" title="vector.h" alt="" coords="109,80,179,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="vinit_8h__dep__incl.png" border="0" usemap="#src_2lvl1_2inc_2vinit_8hdep" alt=""/></div>
-<map name="src_2lvl1_2inc_2vinit_8hdep" id="src_2lvl1_2inc_2vinit_8hdep">
-<area shape="rect" id="node2" href="level1_8h.html" title="src/lvl1/inc/level1.h" alt="" coords="5,80,140,107"/>
-<area shape="rect" id="node3" href="vinit_8c.html" title="src/lvl1/src/vinit.c" alt="" coords="165,80,290,107"/>
+<div class="center"><img src="vinit_8h__dep__incl.png" border="0" usemap="#src_2gnd_2inc_2vinit_8hdep" alt=""/></div>
+<map name="src_2gnd_2inc_2vinit_8hdep" id="src_2gnd_2inc_2vinit_8hdep">
+<area shape="rect" id="node2" href="vinit_8c.html" title="src/gnd/src/vinit.c" alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="level1_8h.html" title="src/lvl1/inc/level1.h" alt="" coords="156,80,291,107"/>
 </map>
 </div>
 </div>
@@ -109,7 +109,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adaa2b99da82281a924f974a6c0ee48a5"><td class="memItemLeft" align="right" valign="top">int IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vinit_8h.html#adaa2b99da82281a924f974a6c0ee48a5">vinit</a> (struct <a class="el" href="structvector.html">vector</a> *V, const unsigned int l) __attribute__((nonull))</td></tr>
+<tr class="memitem:adaa2b99da82281a924f974a6c0ee48a5"><td class="memItemLeft" align="right" valign="top">int IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vinit_8h.html#adaa2b99da82281a924f974a6c0ee48a5">vinit</a> (struct <a class="el" href="structvector.html">vector</a> *V, const unsigned int l) <a class="el" href="array__zero_8h.html#a773bfa726d26ed3aba89b686193787aa">__attribute__</a>((nonull))</td></tr>
 <tr class="separator:adaa2b99da82281a924f974a6c0ee48a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -140,14 +140,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Utitility function for initializing vector datatypes</p>
 <p>Return Codes 0 ~ Vector Initialization and Allocation was successful -1 ~ (ERROR) Vector has already been initialized -2 ~ (ERROR) Malloc has failed </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="vinit_8h_adaa2b99da82281a924f974a6c0ee48a5_cgraph.png" border="0" usemap="#vinit_8h_adaa2b99da82281a924f974a6c0ee48a5_cgraph" alt=""/></div>
-<map name="vinit_8h_adaa2b99da82281a924f974a6c0ee48a5_cgraph" id="vinit_8h_adaa2b99da82281a924f974a6c0ee48a5_cgraph">
-<area shape="rect" id="node2" href="array__zero_8h.html#a56e0537cf29dc30e0320a18e290caa5b" title="array_zero" alt="" coords="100,5,183,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -156,7 +148,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f079f974ef7bd5381641f99c610266ad.html">lvl1</a></li><li class="navelem"><a class="el" href="dir_0c5904825db9d45d2c4147c25fe9d403.html">inc</a></li><li class="navelem"><a class="el" href="vinit_8h.html">vinit.h</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_30140340177eabb5ce70a4850ad82823.html">gnd</a></li><li class="navelem"><a class="el" href="dir_bd9f983853599b0ba9e8717f92892771.html">inc</a></li><li class="navelem"><a class="el" href="vinit_8h.html">vinit.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,4 +1,4 @@
-<map id="src/lvl1/inc/vinit.h" name="src/lvl1/inc/vinit.h">
-<area shape="rect" id="node2" href="$level1_8h.html" title="src/lvl1/inc/level1.h" alt="" coords="5,80,140,107"/>
-<area shape="rect" id="node3" href="$vinit_8c.html" title="src/lvl1/src/vinit.c" alt="" coords="165,80,290,107"/>
+<map id="src/gnd/inc/vinit.h" name="src/gnd/inc/vinit.h">
+<area shape="rect" id="node2" href="$vinit_8c.html" title="src/gnd/src/vinit.c" alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$level1_8h.html" title="src/lvl1/inc/level1.h" alt="" coords="156,80,291,107"/>
 </map>

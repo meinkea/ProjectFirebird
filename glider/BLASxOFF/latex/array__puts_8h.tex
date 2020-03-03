@@ -20,57 +20,62 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__puts_8h_a3f568bfbd4fde500e67a7d1ea14a114f}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
-\item 
-\hyperlink{array__puts_8h_ada409e5e2341d00a0eeba875f3338a4e}{array\+\_\+puts} (char $\ast$string, const float $\ast$\hyperlink{array__copy_8h_aa7007a6d2f5d910f06eae92ddb4cc3bf}{arr\+Src}, const unsigned int \hyperlink{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}{start}, const unsigned int \hyperlink{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}{end})
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__puts_8h_acebdc9fb3ce751b65104c200d8ed21a9}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull)) array\+\_\+puts(char $\ast$string
 \end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR const float $\ast$ \hyperlink{array__puts_8h_aa7007a6d2f5d910f06eae92ddb4cc3bf}{arr\+Src}
+\begin{DoxyCompactList}\small\item\em $<$ Pointer to string buffer for printing \end{DoxyCompactList}\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR const float const unsigned int \hyperlink{array__puts_8h_afd423ccb9a3b73eaf00854e74324938e}{start}
+\begin{DoxyCompactList}\small\item\em Starting element index to loop across. \end{DoxyCompactList}\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR const float const unsigned int const unsigned int \hyperlink{array__puts_8h_a3827eeafb6094da9458f36d58f5e1f8e}{end}
+\begin{DoxyCompactList}\small\item\em $<$ Last element index to loop across \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__puts_8h_a3f568bfbd4fde500e67a7d1ea14a114f}\label{array__puts_8h_a3f568bfbd4fde500e67a7d1ea14a114f}} 
+\mbox{\Hypertarget{array__puts_8h_acebdc9fb3ce751b65104c200d8ed21a9}\label{array__puts_8h_acebdc9fb3ce751b65104c200d8ed21a9}} 
 \index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
 \subsubsection{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+()}{\_\_attribute\_\_()}}
-{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})}
 
 Returns a pointer to a putsable string with the return character \textquotesingle{}~\newline
-\textquotesingle{}
+\textquotesingle{} 
 
-This function add two arrays together element by element
-
-This function adds a scalar too each element in an array
-
-
-\begin{DoxyItemize}
-\item This function is deliberatly placed in Instruction R\+AM. Meaning that this function will always remained cached.
-\item the {\bfseries attribute}((always\+\_\+inline)) tells the compiler to A\+L\+W\+A\+YS inline to function reguardless of optimization levels
-\item the {\bfseries attribute}((nonull)) tells the compiler that the function\textquotesingle{}s pointer arguments cannot bell N\+U\+LL
-\end{DoxyItemize}
-
-This function adds all the elements in an array and returns the sum
-
-This function copies the elements of one arrays into another array
-
-This function computes the dot product between two arrays
-
-This function multiplies each element of an array by a scalar
-
-This function multiplies elements of an array by a scalar
-
-This function Zeros the elements in an array \mbox{\Hypertarget{array__puts_8h_ada409e5e2341d00a0eeba875f3338a4e}\label{array__puts_8h_ada409e5e2341d00a0eeba875f3338a4e}} 
-\index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!array\+\_\+puts@{array\+\_\+puts}}
-\index{array\+\_\+puts@{array\+\_\+puts}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
-\subsubsection{\texorpdfstring{array\+\_\+puts()}{array\_puts()}}
-{\footnotesize\ttfamily array\+\_\+puts (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{const float $\ast$}]{arr\+Src,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{array__puts_8h_aa7007a6d2f5d910f06eae92ddb4cc3bf}\label{array__puts_8h_aa7007a6d2f5d910f06eae92ddb4cc3bf}} 
+\index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!arr\+Src@{arr\+Src}}
+\index{arr\+Src@{arr\+Src}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
+\subsubsection{\texorpdfstring{arr\+Src}{arrSrc}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR const float$\ast$ arr\+Src}
 
 
-\begin{DoxyParams}{Parameters}
-{\em string} & Pointer to string buffer for printing \\
-\hline
-{\em arr\+Src} & Array pointer for source data \\
-\hline
-{\em start} & Starting element index to loop across \\
-\hline
-{\em end} & Last element index to loop across \\
-\hline
-\end{DoxyParams}
+
+$<$ Pointer to string buffer for printing 
+
+Array pointer for source data \mbox{\Hypertarget{array__puts_8h_a3827eeafb6094da9458f36d58f5e1f8e}\label{array__puts_8h_a3827eeafb6094da9458f36d58f5e1f8e}} 
+\index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!end@{end}}
+\index{end@{end}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR const float const unsigned int const unsigned int end}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{return}
+\end{DoxyCode}
+
+
+$<$ Last element index to loop across 
+
+\mbox{\Hypertarget{array__puts_8h_afd423ccb9a3b73eaf00854e74324938e}\label{array__puts_8h_afd423ccb9a3b73eaf00854e74324938e}} 
+\index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!start@{start}}
+\index{start@{start}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR const float const unsigned int start}
+
+
+
+Starting element index to loop across. 
+

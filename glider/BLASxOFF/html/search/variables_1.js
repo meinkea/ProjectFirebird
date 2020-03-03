@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buf',['buf',['../array__print_8h.html#a5f36c3d339c451e2c76b6303b83e970c',1,'array_print.h']]]
+  ['c',['c',['../structmatrix.html#a9499b963be4febd5b909822a4d0ae290',1,'matrix']]]
 ];

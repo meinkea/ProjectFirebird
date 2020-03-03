@@ -8,7 +8,6 @@ var dir_a0d7b53fbd022f1030b66b521129d118 =
     [ "vcros3.c", "vcros3_8c.html", "vcros3_8c" ],
     [ "vdot.c", "vdot_8c.html", "vdot_8c" ],
     [ "vecld.c", "vecld_8c.html", "vecld_8c" ],
-    [ "vinit.c", "lvl1_2src_2vinit_8c.html", "lvl1_2src_2vinit_8c" ],
     [ "vload.c", "vload_8c.html", "vload_8c" ],
     [ "vmscl.c", "vmscl_8c.html", "vmscl_8c" ],
     [ "vmult.c", "vmult_8c.html", "vmult_8c" ],

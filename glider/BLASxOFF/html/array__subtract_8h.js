@@ -1,5 +1,8 @@
 var array__subtract_8h =
 [
-    [ "__attribute__", "array__subtract_8h.html#a3f568bfbd4fde500e67a7d1ea14a114f", null ],
-    [ "array_substract", "array__subtract_8h.html#a2a5879d0b049f07864f1e9f4fc3a35d5", null ]
+    [ "__attribute__", "array__subtract_8h.html#a33d9ae6a3856a1da4409e370ff6f24f8", null ],
+    [ "arrOprA", "array__subtract_8h.html#a5e4e071457fdcdd98fd22e75c6bfc555", null ],
+    [ "arrOprB", "array__subtract_8h.html#ad0fdcae3b6e2275dc980d15e3726a6a1", null ],
+    [ "end", "array__subtract_8h.html#a68c28899964e31626b3c9e42853f0d42", null ],
+    [ "start", "array__subtract_8h.html#a0549b2187026de7f72c6b3214fa437d5", null ]
 ];
