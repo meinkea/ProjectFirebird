@@ -1,27 +1,35 @@
 \hypertarget{array__set_8c}{}\section{src/lvl0/src/array\+\_\+set.c File Reference}
 \label{array__set_8c}\index{src/lvl0/src/array\+\_\+set.\+c@{src/lvl0/src/array\+\_\+set.\+c}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{array__set_8c__dep__incl}
+\end{center}
+\end{figure}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{array__set_8c_a961b060f1d08c17d7584dccb8e4b6609}{array\+\_\+set} (float $\ast$arr\+Dst, const float scl\+Src, const unsigned int start, const unsigned int end)
+void \hyperlink{array__set_8c_a1f6671eb356f962a5c6936227a1c5d6b}{array\+\_\+set} (float $\ast$arr\+Dst, const unsigned int start, const unsigned int end, const float scl\+Src)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__set_8c_a961b060f1d08c17d7584dccb8e4b6609}\label{array__set_8c_a961b060f1d08c17d7584dccb8e4b6609}} 
+\mbox{\Hypertarget{array__set_8c_a1f6671eb356f962a5c6936227a1c5d6b}\label{array__set_8c_a1f6671eb356f962a5c6936227a1c5d6b}} 
 \index{array\+\_\+set.\+c@{array\+\_\+set.\+c}!array\+\_\+set@{array\+\_\+set}}
 \index{array\+\_\+set@{array\+\_\+set}!array\+\_\+set.\+c@{array\+\_\+set.\+c}}
 \subsubsection{\texorpdfstring{array\+\_\+set()}{array\_set()}}
-{\footnotesize\ttfamily void array\+\_\+set (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Dst,  }\item[{const float}]{scl\+Src,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void array\+\_\+set (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Dst,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end,  }\item[{const float}]{scl\+Src }\end{DoxyParamCaption})}
 
 This function set two arrays together element by element 
 \begin{DoxyParams}{Parameters}
 {\em arr\+Dst} & Array pointer where the result will be stored \\
 \hline
-{\em scl\+Src} & Float for the source scalar \\
-\hline
 {\em start} & Starting element index to loop across \\
 \hline
 {\em end} & Last element index to loop across \\
+\hline
+{\em scl\+Src} & Float for the source scalar \\
 \hline
 \end{DoxyParams}

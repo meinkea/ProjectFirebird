@@ -80,13 +80,13 @@ $(document).ready(function(){initNavTree('array__zero_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">array_zero.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
-<code>#include &quot;../src/array_zero.c__&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_zero.h:</div>
 <div class="dyncontent">
@@ -107,59 +107,79 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a56e0537cf29dc30e0320a18e290caa5b"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__zero_8h.html#a56e0537cf29dc30e0320a18e290caa5b">array_zero</a> (float *arrDst, const unsigned int start, const unsigned int end) __attribute__((always_inline)) __attribute__((nonull))</td></tr>
-<tr class="separator:a56e0537cf29dc30e0320a18e290caa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773bfa726d26ed3aba89b686193787aa"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__zero_8h.html#a773bfa726d26ed3aba89b686193787aa">__attribute__</a> ((always_inline)) __attribute__((nonull)) array_zero(float *arrDst</td></tr>
+<tr class="separator:a773bfa726d26ed3aba89b686193787aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1951879481f1ba4287d30b0a485429fc"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__zero_8h.html#a1951879481f1ba4287d30b0a485429fc">start</a></td></tr>
+<tr class="memdesc:a1951879481f1ba4287d30b0a485429fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Array pointer where the result will be stored  <a href="#a1951879481f1ba4287d30b0a485429fc">More...</a><br /></td></tr>
+<tr class="separator:a1951879481f1ba4287d30b0a485429fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae062d39ef5523e038e43c08fa9fe07b4"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const unsigned int const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__zero_8h.html#ae062d39ef5523e038e43c08fa9fe07b4">end</a></td></tr>
+<tr class="memdesc:ae062d39ef5523e038e43c08fa9fe07b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Last element index to loop across  <a href="#ae062d39ef5523e038e43c08fa9fe07b4">More...</a><br /></td></tr>
+<tr class="separator:ae062d39ef5523e038e43c08fa9fe07b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a56e0537cf29dc30e0320a18e290caa5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e0537cf29dc30e0320a18e290caa5b">&#9670;&nbsp;</a></span>array_zero()</h2>
+<a id="a773bfa726d26ed3aba89b686193787aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773bfa726d26ed3aba89b686193787aa">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function Zeros the elements in an array </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae062d39ef5523e038e43c08fa9fe07b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae062d39ef5523e038e43c08fa9fe07b4">&#9670;&nbsp;</a></span>end</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IRAM_ATTR array_zero </td>
-          <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>arrDst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">void IRAM_ATTR const unsigned int const unsigned int end</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function Zeros the elements in an array </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arrDst</td><td>Array pointer where the result will be stored </td></tr>
-    <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
-    <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="array__zero_8h_a56e0537cf29dc30e0320a18e290caa5b_icgraph.png" border="0" usemap="#array__zero_8h_a56e0537cf29dc30e0320a18e290caa5b_icgraph" alt=""/></div>
-<map name="array__zero_8h_a56e0537cf29dc30e0320a18e290caa5b_icgraph" id="array__zero_8h_a56e0537cf29dc30e0320a18e290caa5b_icgraph">
-<area shape="rect" id="node2" href="vinit_8c.html#a18333d150d08e8d04f2d9cf71ec2141f" title="vinit" alt="" coords="140,5,187,32"/>
-<area shape="rect" id="node3" href="vzero_8c.html#a53a2d7d6e44c3a9379c094d987770b75" title="vzero" alt="" coords="136,56,191,83"/>
-</map>
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> I=<a class="code" href="array__zero_8h.html#a1951879481f1ba4287d30b0a485429fc">start</a>; I&lt;<a class="code" href="array__zero_8h.html#ae062d39ef5523e038e43c08fa9fe07b4">end</a>; ++I) {</div><div class="line">      arrDst[I] = 0.0;</div><div class="line">    }</div><div class="line">    <span class="keywordflow">return</span></div><div class="ttc" id="array__zero_8h_html_ae062d39ef5523e038e43c08fa9fe07b4"><div class="ttname"><a href="array__zero_8h.html#ae062d39ef5523e038e43c08fa9fe07b4">end</a></div><div class="ttdeci">void IRAM_ATTR const unsigned int const unsigned int end</div><div class="ttdoc">&lt; Last element index to loop across </div><div class="ttdef"><b>Definition:</b> array_zero.h:22</div></div>
+<div class="ttc" id="array__zero_8h_html_a1951879481f1ba4287d30b0a485429fc"><div class="ttname"><a href="array__zero_8h.html#a1951879481f1ba4287d30b0a485429fc">start</a></div><div class="ttdeci">void IRAM_ATTR const unsigned int start</div><div class="ttdoc">&lt; Array pointer where the result will be stored </div><div class="ttdef"><b>Definition:</b> array_zero.h:20</div></div>
+</div><!-- fragment -->
+<p>&lt; Last element index to loop across </p>
+
 </div>
+</div>
+<a id="a1951879481f1ba4287d30b0a485429fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1951879481f1ba4287d30b0a485429fc">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const unsigned int start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Array pointer where the result will be stored </p>
+<p>Starting element index to loop across </p>
 
 </div>
 </div>

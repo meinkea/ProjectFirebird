@@ -80,13 +80,13 @@ $(document).ready(function(){initNavTree('array__dot_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">array_dot.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
-<code>#include &quot;../src/array_dot.c__&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_dot.h:</div>
 <div class="dyncontent">
@@ -110,72 +110,166 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5f226f010b6fa6dc2111595f46e623b0"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a5f226f010b6fa6dc2111595f46e623b0">array_dot</a> (float *sclRes, const float *arrOprA, const float *arrOprB, const unsigned int start, const unsigned int end) __attribute__((always_inline)) __attribute__((nonull))</td></tr>
-<tr class="separator:a5f226f010b6fa6dc2111595f46e623b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be5da2919f5dc8072122673ce1dff17"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a8be5da2919f5dc8072122673ce1dff17">__attribute__</a> ((always_inline)) __attribute__((nonull)) array_dot(float *<a class="el" href="array__dot_8h.html#a679c62e32495a27559a1723609a78a20">sclRes</a></td></tr>
+<tr class="separator:a8be5da2919f5dc8072122673ce1dff17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe37ef39291fe27f977e30e3118c90f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#abe37ef39291fe27f977e30e3118c90f9">for</a> (unsigned int I=<a class="el" href="array__zero_8h.html#a1951879481f1ba4287d30b0a485429fc">start</a>;I&lt; <a class="el" href="array__zero_8h.html#ae062d39ef5523e038e43c08fa9fe07b4">end</a>;++I)</td></tr>
+<tr class="separator:abe37ef39291fe27f977e30e3118c90f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5e4e071457fdcdd98fd22e75c6bfc555"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a5e4e071457fdcdd98fd22e75c6bfc555">arrOprA</a></td></tr>
+<tr class="memdesc:a5e4e071457fdcdd98fd22e75c6bfc555"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Array pointer where the result will be stored  <a href="#a5e4e071457fdcdd98fd22e75c6bfc555">More...</a><br /></td></tr>
+<tr class="separator:a5e4e071457fdcdd98fd22e75c6bfc555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fdcae3b6e2275dc980d15e3726a6a1"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#ad0fdcae3b6e2275dc980d15e3726a6a1">arrOprB</a></td></tr>
+<tr class="memdesc:ad0fdcae3b6e2275dc980d15e3726a6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array pointer for the 2nd operand.  <a href="#ad0fdcae3b6e2275dc980d15e3726a6a1">More...</a><br /></td></tr>
+<tr class="separator:ad0fdcae3b6e2275dc980d15e3726a6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0549b2187026de7f72c6b3214fa437d5"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float const float const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a0549b2187026de7f72c6b3214fa437d5">start</a></td></tr>
+<tr class="memdesc:a0549b2187026de7f72c6b3214fa437d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting element index to loop across.  <a href="#a0549b2187026de7f72c6b3214fa437d5">More...</a><br /></td></tr>
+<tr class="separator:a0549b2187026de7f72c6b3214fa437d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c28899964e31626b3c9e42853f0d42"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float const float const unsigned int const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a68c28899964e31626b3c9e42853f0d42">end</a></td></tr>
+<tr class="memdesc:a68c28899964e31626b3c9e42853f0d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Last element index to loop across  <a href="#a68c28899964e31626b3c9e42853f0d42">More...</a><br /></td></tr>
+<tr class="separator:a68c28899964e31626b3c9e42853f0d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679c62e32495a27559a1723609a78a20"><td class="memItemLeft" align="right" valign="top">*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a679c62e32495a27559a1723609a78a20">sclRes</a> = sum</td></tr>
+<tr class="separator:a679c62e32495a27559a1723609a78a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9717e7bbecb906637e86cef6da3d83c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__dot_8h.html#a9717e7bbecb906637e86cef6da3d83c2">return</a></td></tr>
+<tr class="separator:a9717e7bbecb906637e86cef6da3d83c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5f226f010b6fa6dc2111595f46e623b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f226f010b6fa6dc2111595f46e623b0">&#9670;&nbsp;</a></span>array_dot()</h2>
+<a id="a8be5da2919f5dc8072122673ce1dff17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be5da2919f5dc8072122673ce1dff17">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function computes the dot product between two arrays </p>
+
+</div>
+</div>
+<a id="abe37ef39291fe27f977e30e3118c90f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe37ef39291fe27f977e30e3118c90f9">&#9670;&nbsp;</a></span>for()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IRAM_ATTR array_dot </td>
+          <td class="memname">for </td>
           <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>sclRes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>arrOprA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>arrOprB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function computes the dot product between two arrays </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sclRes</td><td>Array pointer where the result will be stored </td></tr>
-    <tr><td class="paramname">arrOprA</td><td>Array pointer for the 1st operand </td></tr>
-    <tr><td class="paramname">arrOprB</td><td>Array pointer for the 2nd operand </td></tr>
-    <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
-    <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="array__dot_8h_a5f226f010b6fa6dc2111595f46e623b0_icgraph.png" border="0" usemap="#array__dot_8h_a5f226f010b6fa6dc2111595f46e623b0_icgraph" alt=""/></div>
-<map name="array__dot_8h_a5f226f010b6fa6dc2111595f46e623b0_icgraph" id="array__dot_8h_a5f226f010b6fa6dc2111595f46e623b0_icgraph">
-<area shape="rect" id="node2" href="vdot_8c.html#a25824d876bba63932d201971e30aa9e3" title="vdot" alt="" coords="129,5,176,32"/>
-</map>
+
 </div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5e4e071457fdcdd98fd22e75c6bfc555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4e071457fdcdd98fd22e75c6bfc555">&#9670;&nbsp;</a></span>arrOprA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const float* arrOprA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; Array pointer where the result will be stored </p>
+<p>Array pointer for the 1st operand </p>
+
+</div>
+</div>
+<a id="ad0fdcae3b6e2275dc980d15e3726a6a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0fdcae3b6e2275dc980d15e3726a6a1">&#9670;&nbsp;</a></span>arrOprB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const float const float* arrOprB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array pointer for the 2nd operand. </p>
+
+</div>
+</div>
+<a id="a68c28899964e31626b3c9e42853f0d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c28899964e31626b3c9e42853f0d42">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const float const float const unsigned int const unsigned int end</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordtype">float</span> sum = 0.0</div></div><!-- fragment -->
+<p>&lt; Last element index to loop across </p>
+
+</div>
+</div>
+<a id="a9717e7bbecb906637e86cef6da3d83c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9717e7bbecb906637e86cef6da3d83c2">&#9670;&nbsp;</a></span>return</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">return</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a679c62e32495a27559a1723609a78a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679c62e32495a27559a1723609a78a20">&#9670;&nbsp;</a></span>sclRes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* sclRes = sum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0549b2187026de7f72c6b3214fa437d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0549b2187026de7f72c6b3214fa437d5">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const float const float const unsigned int start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starting element index to loop across. </p>
 
 </div>
 </div>

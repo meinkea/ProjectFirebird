@@ -9,7 +9,7 @@ var dir_0c5904825db9d45d2c4147c25fe9d403 =
     [ "vcros3.h", "vcros3_8h.html", "vcros3_8h" ],
     [ "vdot.h", "vdot_8h.html", "vdot_8h" ],
     [ "vecld.h", "vecld_8h.html", "vecld_8h" ],
-    [ "vinit.h", "vinit_8h.html", "vinit_8h" ],
+    [ "vinit.h", "lvl1_2inc_2vinit_8h.html", "lvl1_2inc_2vinit_8h" ],
     [ "vload.h", "vload_8h.html", "vload_8h" ],
     [ "vmscl.h", "vmscl_8h.html", "vmscl_8h" ],
     [ "vmult.h", "vmult_8h.html", "vmult_8h" ],

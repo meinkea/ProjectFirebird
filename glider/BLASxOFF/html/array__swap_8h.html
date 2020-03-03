@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('array__swap_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
-<code>#include &quot;../src/array_zero.c__&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_swap.h:</div>
 <div class="dyncontent">
@@ -109,18 +108,60 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e277982b406c448efdf782e765c264c"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#a7e277982b406c448efdf782e765c264c">array_swap</a> (float *arrSrcDstA, float *arrSrcDstB) __attribute__((always_inline)) __attribute__((nonull))</td></tr>
-<tr class="separator:a7e277982b406c448efdf782e765c264c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f568bfbd4fde500e67a7d1ea14a114f"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#a3f568bfbd4fde500e67a7d1ea14a114f">__attribute__</a> ((always_inline)) __attribute__((nonull))</td></tr>
+<tr class="separator:a3f568bfbd4fde500e67a7d1ea14a114f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef3a7fbae6a0718e81fc59f1bf6f4b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__swap_8h.html#afef3a7fbae6a0718e81fc59f1bf6f4b2">array_swap</a> (float *arrSrcDstA, float *arrSrcDstB)</td></tr>
+<tr class="separator:afef3a7fbae6a0718e81fc59f1bf6f4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7e277982b406c448efdf782e765c264c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e277982b406c448efdf782e765c264c">&#9670;&nbsp;</a></span>array_swap()</h2>
+<a id="a3f568bfbd4fde500e67a7d1ea14a114f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f568bfbd4fde500e67a7d1ea14a114f">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function swap two arrays together element by element</p>
+<p>This function add two arrays together element by element</p>
+<p>This function adds a scalar too each element in an array</p>
+<ul>
+<li>This function is deliberatly placed in Instruction RAM. Meaning that this function will always remained cached.</li>
+<li>the <b>attribute</b>((always_inline)) tells the compiler to ALWAYS inline to function reguardless of optimization levels</li>
+<li>the <b>attribute</b>((nonull)) tells the compiler that the function's pointer arguments cannot bell NULL</li>
+</ul>
+<p>This function adds all the elements in an array and returns the sum</p>
+<p>This function copies the elements of one arrays into another array</p>
+<p>This function computes the dot product between two arrays</p>
+<p>This function multiplies each element of an array by a scalar</p>
+<p>This function multiplies elements of an array by a scalar</p>
+<p>This function Zeros the elements in an array </p>
+
+</div>
+</div>
+<a id="afef3a7fbae6a0718e81fc59f1bf6f4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef3a7fbae6a0718e81fc59f1bf6f4b2">&#9670;&nbsp;</a></span>array_swap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IRAM_ATTR array_swap </td>
+          <td class="memname">array_swap </td>
           <td>(</td>
           <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>arrSrcDstA</em>, </td>
@@ -138,7 +179,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function swap two arrays together element by element </p>
 
 </div>
 </div>

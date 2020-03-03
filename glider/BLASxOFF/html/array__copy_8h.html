@@ -80,13 +80,13 @@ $(document).ready(function(){initNavTree('array__copy_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">array_copy.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
-<code>#include &quot;../src/array_copy.c__&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_copy.h:</div>
 <div class="dyncontent">
@@ -110,65 +110,99 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6eff457f740569ba50b92c95bd5193b1"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__copy_8h.html#a6eff457f740569ba50b92c95bd5193b1">array_copy</a> (float *arrDst, const float *arrSrc, const unsigned int start, const unsigned int end) __attribute__((always_inline)) __attribute__((nonull))</td></tr>
-<tr class="separator:a6eff457f740569ba50b92c95bd5193b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff8f0d70bb680fd2d234b31f96638c8"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__copy_8h.html#a4ff8f0d70bb680fd2d234b31f96638c8">__attribute__</a> ((always_inline)) __attribute__((nonull)) array_copy(float *arrDst</td></tr>
+<tr class="separator:a4ff8f0d70bb680fd2d234b31f96638c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa7007a6d2f5d910f06eae92ddb4cc3bf"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__copy_8h.html#aa7007a6d2f5d910f06eae92ddb4cc3bf">arrSrc</a></td></tr>
+<tr class="memdesc:aa7007a6d2f5d910f06eae92ddb4cc3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Array pointer destination to copy source data into  <a href="#aa7007a6d2f5d910f06eae92ddb4cc3bf">More...</a><br /></td></tr>
+<tr class="separator:aa7007a6d2f5d910f06eae92ddb4cc3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd423ccb9a3b73eaf00854e74324938e"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__copy_8h.html#afd423ccb9a3b73eaf00854e74324938e">start</a></td></tr>
+<tr class="memdesc:afd423ccb9a3b73eaf00854e74324938e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting element index to loop across.  <a href="#afd423ccb9a3b73eaf00854e74324938e">More...</a><br /></td></tr>
+<tr class="separator:afd423ccb9a3b73eaf00854e74324938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3827eeafb6094da9458f36d58f5e1f8e"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR const float const unsigned int const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__copy_8h.html#a3827eeafb6094da9458f36d58f5e1f8e">end</a></td></tr>
+<tr class="memdesc:a3827eeafb6094da9458f36d58f5e1f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Last element index to loop across  <a href="#a3827eeafb6094da9458f36d58f5e1f8e">More...</a><br /></td></tr>
+<tr class="separator:a3827eeafb6094da9458f36d58f5e1f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6eff457f740569ba50b92c95bd5193b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eff457f740569ba50b92c95bd5193b1">&#9670;&nbsp;</a></span>array_copy()</h2>
+<a id="a4ff8f0d70bb680fd2d234b31f96638c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff8f0d70bb680fd2d234b31f96638c8">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function copies the elements of one arrays into another array </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa7007a6d2f5d910f06eae92ddb4cc3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7007a6d2f5d910f06eae92ddb4cc3bf">&#9670;&nbsp;</a></span>arrSrc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IRAM_ATTR array_copy </td>
-          <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>arrDst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>arrSrc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">void IRAM_ATTR const float* arrSrc</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function copies the elements of one arrays into another array </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arrDst</td><td>Array pointer destination to copy source data into </td></tr>
-    <tr><td class="paramname">arrSrc</td><td>Array pointer for source data </td></tr>
-    <tr><td class="paramname">start</td><td>Starting element index to loop across </td></tr>
-    <tr><td class="paramname">end</td><td>Last element index to loop across </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="array__copy_8h_a6eff457f740569ba50b92c95bd5193b1_icgraph.png" border="0" usemap="#array__copy_8h_a6eff457f740569ba50b92c95bd5193b1_icgraph" alt=""/></div>
-<map name="array__copy_8h_a6eff457f740569ba50b92c95bd5193b1_icgraph" id="array__copy_8h_a6eff457f740569ba50b92c95bd5193b1_icgraph">
-<area shape="rect" id="node2" href="vcopy_8c.html#a8466e3fc0b97211e1652d7d85848d6cb" title="vcopy" alt="" coords="140,5,197,32"/>
-</map>
+
+<p>&lt; Array pointer destination to copy source data into </p>
+<p>Array pointer for source data </p>
+
 </div>
+</div>
+<a id="a3827eeafb6094da9458f36d58f5e1f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3827eeafb6094da9458f36d58f5e1f8e">&#9670;&nbsp;</a></span>end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const float const unsigned int const unsigned int end</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> I=<a class="code" href="array__copy_8h.html#afd423ccb9a3b73eaf00854e74324938e">start</a>; I&lt;<a class="code" href="array__copy_8h.html#a3827eeafb6094da9458f36d58f5e1f8e">end</a>; ++I) {</div><div class="line">      arrDst[I] = <a class="code" href="array__copy_8h.html#aa7007a6d2f5d910f06eae92ddb4cc3bf">arrSrc</a>[I];</div><div class="line">    }</div><div class="line">    <span class="keywordflow">return</span></div><div class="ttc" id="array__copy_8h_html_a3827eeafb6094da9458f36d58f5e1f8e"><div class="ttname"><a href="array__copy_8h.html#a3827eeafb6094da9458f36d58f5e1f8e">end</a></div><div class="ttdeci">void IRAM_ATTR const float const unsigned int const unsigned int end</div><div class="ttdoc">&lt; Last element index to loop across </div><div class="ttdef"><b>Definition:</b> array_copy.h:23</div></div>
+<div class="ttc" id="array__copy_8h_html_afd423ccb9a3b73eaf00854e74324938e"><div class="ttname"><a href="array__copy_8h.html#afd423ccb9a3b73eaf00854e74324938e">start</a></div><div class="ttdeci">void IRAM_ATTR const float const unsigned int start</div><div class="ttdoc">Starting element index to loop across. </div><div class="ttdef"><b>Definition:</b> array_copy.h:20</div></div>
+<div class="ttc" id="array__copy_8h_html_aa7007a6d2f5d910f06eae92ddb4cc3bf"><div class="ttname"><a href="array__copy_8h.html#aa7007a6d2f5d910f06eae92ddb4cc3bf">arrSrc</a></div><div class="ttdeci">void IRAM_ATTR const float * arrSrc</div><div class="ttdoc">&lt; Array pointer destination to copy source data into </div><div class="ttdef"><b>Definition:</b> array_copy.h:20</div></div>
+</div><!-- fragment -->
+<p>&lt; Last element index to loop across </p>
+
+</div>
+</div>
+<a id="afd423ccb9a3b73eaf00854e74324938e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd423ccb9a3b73eaf00854e74324938e">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR const float const unsigned int start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starting element index to loop across. </p>
 
 </div>
 </div>

@@ -1,13 +1,12 @@
 \hypertarget{array__puts_8h}{}\section{src/lvl0/inc/array\+\_\+puts.h File Reference}
 \label{array__puts_8h}\index{src/lvl0/inc/array\+\_\+puts.\+h@{src/lvl0/inc/array\+\_\+puts.\+h}}
 {\ttfamily \#include \char`\"{}esp\+\_\+attr.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../src/array\+\_\+puts.\+c\+\_\+\+\_\+\char`\"{}}\newline
 Include dependency graph for array\+\_\+puts.\+h\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=266pt]{array__puts_8h__incl}
+\includegraphics[width=169pt]{array__puts_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:
@@ -21,19 +20,50 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__puts_8h_a173a2544e1e54d9605348701522c160f}{array\+\_\+puts} (char $\ast$string, const float $\ast$arr\+Src, const unsigned int start, const unsigned int end) \+\_\+\+\_\+attribute\+\_\+\+\_\+((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__puts_8h_a3f568bfbd4fde500e67a7d1ea14a114f}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+\item 
+\hyperlink{array__puts_8h_ada409e5e2341d00a0eeba875f3338a4e}{array\+\_\+puts} (char $\ast$string, const float $\ast$\hyperlink{array__copy_8h_aa7007a6d2f5d910f06eae92ddb4cc3bf}{arr\+Src}, const unsigned int \hyperlink{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}{start}, const unsigned int \hyperlink{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}{end})
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__puts_8h_a173a2544e1e54d9605348701522c160f}\label{array__puts_8h_a173a2544e1e54d9605348701522c160f}} 
+\mbox{\Hypertarget{array__puts_8h_a3f568bfbd4fde500e67a7d1ea14a114f}\label{array__puts_8h_a3f568bfbd4fde500e67a7d1ea14a114f}} 
+\index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to a putsable string with the return character \textquotesingle{}~\newline
+\textquotesingle{}
+
+This function add two arrays together element by element
+
+This function adds a scalar too each element in an array
+
+
+\begin{DoxyItemize}
+\item This function is deliberatly placed in Instruction R\+AM. Meaning that this function will always remained cached.
+\item the {\bfseries attribute}((always\+\_\+inline)) tells the compiler to A\+L\+W\+A\+YS inline to function reguardless of optimization levels
+\item the {\bfseries attribute}((nonull)) tells the compiler that the function\textquotesingle{}s pointer arguments cannot bell N\+U\+LL
+\end{DoxyItemize}
+
+This function adds all the elements in an array and returns the sum
+
+This function copies the elements of one arrays into another array
+
+This function computes the dot product between two arrays
+
+This function multiplies each element of an array by a scalar
+
+This function multiplies elements of an array by a scalar
+
+This function Zeros the elements in an array \mbox{\Hypertarget{array__puts_8h_ada409e5e2341d00a0eeba875f3338a4e}\label{array__puts_8h_ada409e5e2341d00a0eeba875f3338a4e}} 
 \index{array\+\_\+puts.\+h@{array\+\_\+puts.\+h}!array\+\_\+puts@{array\+\_\+puts}}
 \index{array\+\_\+puts@{array\+\_\+puts}!array\+\_\+puts.\+h@{array\+\_\+puts.\+h}}
 \subsubsection{\texorpdfstring{array\+\_\+puts()}{array\_puts()}}
-{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR array\+\_\+puts (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{const float $\ast$}]{arr\+Src,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily array\+\_\+puts (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{const float $\ast$}]{arr\+Src,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
 
-Returns a pointer to a putsable string with the return character \textquotesingle{}~\newline
-\textquotesingle{} 
+
 \begin{DoxyParams}{Parameters}
 {\em string} & Pointer to string buffer for printing \\
 \hline

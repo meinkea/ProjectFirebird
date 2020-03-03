@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('array__puts_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;esp_attr.h&quot;</code><br />
-<code>#include &quot;../src/array_puts.c__&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for array_puts.h:</div>
 <div class="dyncontent">
@@ -110,18 +109,61 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a173a2544e1e54d9605348701522c160f"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__puts_8h.html#a173a2544e1e54d9605348701522c160f">array_puts</a> (char *string, const float *arrSrc, const unsigned int start, const unsigned int end) __attribute__((always_inline)) __attribute__((nonull))</td></tr>
-<tr class="separator:a173a2544e1e54d9605348701522c160f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f568bfbd4fde500e67a7d1ea14a114f"><td class="memItemLeft" align="right" valign="top">void IRAM_ATTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__puts_8h.html#a3f568bfbd4fde500e67a7d1ea14a114f">__attribute__</a> ((always_inline)) __attribute__((nonull))</td></tr>
+<tr class="separator:a3f568bfbd4fde500e67a7d1ea14a114f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada409e5e2341d00a0eeba875f3338a4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array__puts_8h.html#ada409e5e2341d00a0eeba875f3338a4e">array_puts</a> (char *string, const float *<a class="el" href="array__copy_8h.html#aa7007a6d2f5d910f06eae92ddb4cc3bf">arrSrc</a>, const unsigned int <a class="el" href="array__zero_8h.html#a1951879481f1ba4287d30b0a485429fc">start</a>, const unsigned int <a class="el" href="array__zero_8h.html#ae062d39ef5523e038e43c08fa9fe07b4">end</a>)</td></tr>
+<tr class="separator:ada409e5e2341d00a0eeba875f3338a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a173a2544e1e54d9605348701522c160f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a173a2544e1e54d9605348701522c160f">&#9670;&nbsp;</a></span>array_puts()</h2>
+<a id="a3f568bfbd4fde500e67a7d1ea14a114f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f568bfbd4fde500e67a7d1ea14a114f">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IRAM_ATTR __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a pointer to a putsable string with the return character '<br />
+'</p>
+<p>This function add two arrays together element by element</p>
+<p>This function adds a scalar too each element in an array</p>
+<ul>
+<li>This function is deliberatly placed in Instruction RAM. Meaning that this function will always remained cached.</li>
+<li>the <b>attribute</b>((always_inline)) tells the compiler to ALWAYS inline to function reguardless of optimization levels</li>
+<li>the <b>attribute</b>((nonull)) tells the compiler that the function's pointer arguments cannot bell NULL</li>
+</ul>
+<p>This function adds all the elements in an array and returns the sum</p>
+<p>This function copies the elements of one arrays into another array</p>
+<p>This function computes the dot product between two arrays</p>
+<p>This function multiplies each element of an array by a scalar</p>
+<p>This function multiplies elements of an array by a scalar</p>
+<p>This function Zeros the elements in an array </p>
+
+</div>
+</div>
+<a id="ada409e5e2341d00a0eeba875f3338a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada409e5e2341d00a0eeba875f3338a4e">&#9670;&nbsp;</a></span>array_puts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IRAM_ATTR array_puts </td>
+          <td class="memname">array_puts </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>string</em>, </td>
@@ -151,8 +193,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a pointer to a putsable string with the return character '<br />
-' </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">string</td><td>Pointer to string buffer for printing </td></tr>

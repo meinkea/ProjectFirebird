@@ -7,7 +7,7 @@ var dir_25716affe7b128f867596de1e83f7c2e =
     [ "array_dot.c", "array__dot_8c.html", "array__dot_8c" ],
     [ "array_mscl.c", "array__mscl_8c.html", "array__mscl_8c" ],
     [ "array_mult.c", "array__mult_8c.html", "array__mult_8c" ],
-    [ "array_print.c", "array__print_8c.html", null ],
+    [ "array_print.c", "array__print_8c.html", "array__print_8c" ],
     [ "array_puts.c", "array__puts_8c.html", "array__puts_8c" ],
     [ "array_set.c", "array__set_8c.html", "array__set_8c" ],
     [ "array_subtract.c", "array__subtract_8c.html", "array__subtract_8c" ],

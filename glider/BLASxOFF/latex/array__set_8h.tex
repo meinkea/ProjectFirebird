@@ -1,16 +1,16 @@
 \hypertarget{array__set_8h}{}\section{src/lvl0/inc/array\+\_\+set.h File Reference}
 \label{array__set_8h}\index{src/lvl0/inc/array\+\_\+set.\+h@{src/lvl0/inc/array\+\_\+set.\+h}}
 {\ttfamily \#include \char`\"{}esp\+\_\+attr.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../src/array\+\_\+set.\+c\+\_\+\+\_\+\char`\"{}}\newline
 Include dependency graph for array\+\_\+set.\+h\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=260pt]{array__set_8h__incl}
+\includegraphics[width=169pt]{array__set_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,18 +20,49 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__set_8h_aff21157d3ebfa86512843319382cc0c3}{array\+\_\+set} (float $\ast$arr\+Dst, const float scl\+Src, const unsigned int start, const unsigned int end) \+\_\+\+\_\+attribute\+\_\+\+\_\+((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__set_8h_a3f568bfbd4fde500e67a7d1ea14a114f}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+\item 
+\hyperlink{array__set_8h_a4783e2ea7e94e79636384acc4c542684}{array\+\_\+set} (float $\ast$arr\+Dst, const float \hyperlink{array__print_8h_a476893ee338bd7d79f15687de2dd39b2}{scl\+Src}, const unsigned int \hyperlink{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}{start}, const unsigned int \hyperlink{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}{end})
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__set_8h_aff21157d3ebfa86512843319382cc0c3}\label{array__set_8h_aff21157d3ebfa86512843319382cc0c3}} 
+\mbox{\Hypertarget{array__set_8h_a3f568bfbd4fde500e67a7d1ea14a114f}\label{array__set_8h_a3f568bfbd4fde500e67a7d1ea14a114f}} 
+\index{array\+\_\+set.\+h@{array\+\_\+set.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!array\+\_\+set.\+h@{array\+\_\+set.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function set two arrays together element by element
+
+This function add two arrays together element by element
+
+This function adds a scalar too each element in an array
+
+
+\begin{DoxyItemize}
+\item This function is deliberatly placed in Instruction R\+AM. Meaning that this function will always remained cached.
+\item the {\bfseries attribute}((always\+\_\+inline)) tells the compiler to A\+L\+W\+A\+YS inline to function reguardless of optimization levels
+\item the {\bfseries attribute}((nonull)) tells the compiler that the function\textquotesingle{}s pointer arguments cannot bell N\+U\+LL
+\end{DoxyItemize}
+
+This function adds all the elements in an array and returns the sum
+
+This function copies the elements of one arrays into another array
+
+This function computes the dot product between two arrays
+
+This function multiplies each element of an array by a scalar
+
+This function multiplies elements of an array by a scalar
+
+This function Zeros the elements in an array \mbox{\Hypertarget{array__set_8h_a4783e2ea7e94e79636384acc4c542684}\label{array__set_8h_a4783e2ea7e94e79636384acc4c542684}} 
 \index{array\+\_\+set.\+h@{array\+\_\+set.\+h}!array\+\_\+set@{array\+\_\+set}}
 \index{array\+\_\+set@{array\+\_\+set}!array\+\_\+set.\+h@{array\+\_\+set.\+h}}
 \subsubsection{\texorpdfstring{array\+\_\+set()}{array\_set()}}
-{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR array\+\_\+set (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Dst,  }\item[{const float}]{scl\+Src,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily array\+\_\+set (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Dst,  }\item[{const float}]{scl\+Src,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
 
-This function set two arrays together element by element 
+
 \begin{DoxyParams}{Parameters}
 {\em arr\+Dst} & Array pointer where the result will be stored \\
 \hline

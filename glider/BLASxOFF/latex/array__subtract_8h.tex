@@ -1,13 +1,12 @@
 \hypertarget{array__subtract_8h}{}\section{src/lvl0/inc/array\+\_\+subtract.h File Reference}
 \label{array__subtract_8h}\index{src/lvl0/inc/array\+\_\+subtract.\+h@{src/lvl0/inc/array\+\_\+subtract.\+h}}
 {\ttfamily \#include \char`\"{}esp\+\_\+attr.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../src/array\+\_\+subtract.\+c\+\_\+\+\_\+\char`\"{}}\newline
 Include dependency graph for array\+\_\+subtract.\+h\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=282pt]{array__subtract_8h__incl}
+\includegraphics[width=169pt]{array__subtract_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:
@@ -21,18 +20,49 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__subtract_8h_a98c8f45674e852db4bc80d70acffb8ad}{array\+\_\+substract} (float $\ast$arr\+Res, const float $\ast$arr\+OprA, const float $\ast$arr\+OprB, const unsigned int start, const unsigned int end) \+\_\+\+\_\+attribute\+\_\+\+\_\+((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__subtract_8h_a3f568bfbd4fde500e67a7d1ea14a114f}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull))
+\item 
+\hyperlink{array__subtract_8h_a2a5879d0b049f07864f1e9f4fc3a35d5}{array\+\_\+substract} (float $\ast$arr\+Res, const float $\ast$\hyperlink{array__mult_8h_a5e4e071457fdcdd98fd22e75c6bfc555}{arr\+OprA}, const float $\ast$\hyperlink{array__mult_8h_ad0fdcae3b6e2275dc980d15e3726a6a1}{arr\+OprB}, const unsigned int \hyperlink{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}{start}, const unsigned int \hyperlink{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}{end})
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{array__subtract_8h_a98c8f45674e852db4bc80d70acffb8ad}\label{array__subtract_8h_a98c8f45674e852db4bc80d70acffb8ad}} 
+\mbox{\Hypertarget{array__subtract_8h_a3f568bfbd4fde500e67a7d1ea14a114f}\label{array__subtract_8h_a3f568bfbd4fde500e67a7d1ea14a114f}} 
+\index{array\+\_\+subtract.\+h@{array\+\_\+subtract.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!array\+\_\+subtract.\+h@{array\+\_\+subtract.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function substract two arrays together element by element
+
+This function add two arrays together element by element
+
+This function adds a scalar too each element in an array
+
+
+\begin{DoxyItemize}
+\item This function is deliberatly placed in Instruction R\+AM. Meaning that this function will always remained cached.
+\item the {\bfseries attribute}((always\+\_\+inline)) tells the compiler to A\+L\+W\+A\+YS inline to function reguardless of optimization levels
+\item the {\bfseries attribute}((nonull)) tells the compiler that the function\textquotesingle{}s pointer arguments cannot bell N\+U\+LL
+\end{DoxyItemize}
+
+This function adds all the elements in an array and returns the sum
+
+This function copies the elements of one arrays into another array
+
+This function computes the dot product between two arrays
+
+This function multiplies each element of an array by a scalar
+
+This function multiplies elements of an array by a scalar
+
+This function Zeros the elements in an array \mbox{\Hypertarget{array__subtract_8h_a2a5879d0b049f07864f1e9f4fc3a35d5}\label{array__subtract_8h_a2a5879d0b049f07864f1e9f4fc3a35d5}} 
 \index{array\+\_\+subtract.\+h@{array\+\_\+subtract.\+h}!array\+\_\+substract@{array\+\_\+substract}}
 \index{array\+\_\+substract@{array\+\_\+substract}!array\+\_\+subtract.\+h@{array\+\_\+subtract.\+h}}
 \subsubsection{\texorpdfstring{array\+\_\+substract()}{array\_substract()}}
-{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR array\+\_\+substract (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+OprA,  }\item[{const float $\ast$}]{arr\+OprB,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily array\+\_\+substract (\begin{DoxyParamCaption}\item[{float $\ast$}]{arr\+Res,  }\item[{const float $\ast$}]{arr\+OprA,  }\item[{const float $\ast$}]{arr\+OprB,  }\item[{const unsigned int}]{start,  }\item[{const unsigned int}]{end }\end{DoxyParamCaption})}
 
-This function substract two arrays together element by element 
+
 \begin{DoxyParams}{Parameters}
 {\em arr\+Res} & Array pointer where the result will be stored \\
 \hline

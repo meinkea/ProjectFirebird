@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['m',['m',['../structmatrix.html#afee3aefd63edf15984ec01e14dcfc8ec',1,'matrix']]],
-  ['m_5fallocated_5ff',['M_ALLOCATED_F',['../matrix_8h.html#ac07aef2092efa03fbc087947d3abcba2',1,'matrix.h']]],
-  ['matrix',['matrix',['../structmatrix.html',1,'']]],
-  ['matrix_2ec',['matrix.c',['../matrix_8c.html',1,'']]],
-  ['matrix_2eh',['matrix.h',['../matrix_8h.html',1,'']]]
+  ['flags',['flags',['../structmatrix.html#ab45b487b5fbdfe6df519d054d5acb245',1,'matrix::flags()'],['../structvector.html#ae4c86a32c9c70758bf4556732ded4137',1,'vector::flags()']]],
+  ['for',['for',['../array__asum_8h.html#abe37ef39291fe27f977e30e3118c90f9',1,'for(unsigned int I=start;I&lt; end;++I):&#160;array_asum.h'],['../array__dot_8h.html#abe37ef39291fe27f977e30e3118c90f9',1,'for(unsigned int I=start;I&lt; end;++I):&#160;array_dot.h'],['../array__print_8h.html#ae597a3820fd26e9dc389ce03cfc239f4',1,'for(unsigned int I=0;I&lt; BLAS_PRINT_WHL_MAX_DIGITS;++I):&#160;array_print.h']]]
 ];

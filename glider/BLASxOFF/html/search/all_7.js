@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../structmatrix.html#a4b4ce5bf34789557b86c3c501790b72e',1,'matrix::name()'],['../structvector.html#aa03a1f4dcbfcd7b3f2e3393234dbc4a2',1,'vector::name()']]],
-  ['new_5fmatrix',['new_matrix',['../matrix_8h.html#a11394bf5c56be5e0348b6460f0d04aa0',1,'new_matrix():&#160;matrix.c'],['../matrix_8c.html#a11394bf5c56be5e0348b6460f0d04aa0',1,'new_matrix():&#160;matrix.c']]],
-  ['new_5fvector',['new_vector',['../vector_8h.html#ae0d8044d4d9327f9ecae82ae077e57ea',1,'new_vector():&#160;vector.c'],['../vector_8c.html#ae0d8044d4d9327f9ecae82ae077e57ea',1,'new_vector():&#160;vector.c']]]
+  ['l',['l',['../structmatrix.html#a5be40caa3b21e52f4c60b0846f1bd6b1',1,'matrix::l()'],['../structvector.html#a95c5d324db1053c979145cea94d5263e',1,'vector::l()']]],
+  ['level0_2eh',['level0.h',['../level0_8h.html',1,'']]],
+  ['level1_2eh',['level1.h',['../level1_8h.html',1,'']]]
 ];
