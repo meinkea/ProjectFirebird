@@ -14,7 +14,7 @@
 
   void IRAM_ATTR 
     __attribute__((always_inline))
-    __attribute__((nonull));
+    __attribute__((nonull))
   array_puts(
     char * string,             //!< Pointer to string buffer for printing
     const float * arrSrc,      //!< Array pointer for source data

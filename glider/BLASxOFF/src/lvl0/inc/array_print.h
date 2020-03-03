@@ -38,6 +38,60 @@
   #define CHAR_0_ 48
 
 
+  // Check for if the float is out of the limits defined by BLAS_PRINT_MAX_NUM and BLAS_PRINT_MIN_NUM
+  static inline int
+    __attribute__((always_inline))
+  check_limits(
+    float num,
+    char * buf
+  ) {
+    if (num > BLAS_PRINT_MAX_NUM) {
+      memcpy(buf, " Infinity ", BLAS_PRINT_ARRAY__NUM_DIGITS-1);
+      return -1;
+    } else if (num < BLAS_PRINT_MIN_NUM) {
+      memcpy(buf, "-   0.0000", BLAS_PRINT_ARRAY__NUM_DIGITS-1);
+      return -2;
+    } else {
+      return 0;
+    }
+  }
+
+
+  // Clears all buffer to spaces (' ')
+  static inline void
+    __attribute__((always_inline))
+  clear_string(
+    char * buf
+  ) {
+    for (unsigned int I = 0; buf[I] != '\0'; ++I) {
+      buf[I] = ' ';
+    }
+    return;
+  }
+
+
+  // Places decimal in buffer indicated by DECIMAL_INDEX
+  static inline void
+    __attribute__((always_inline))
+  place_decimal(
+    char * buf
+  ) {
+    //   num whole dig + (   num of ' chars  ) + (sign)  ~ This calulation is done to reduce this part to O(1) (constant) runtime
+    buf[DECIMAL_INDEX] = '.';
+    return;
+  }
+  
+
+  // Sets the sign of the number ('-' or '+')
+  static inline char
+    __attribute__((always_inline))
+  get_num_sign(
+    float num
+  ) {
+    return (num < 0.0) ? '-' : '+';
+  }
+
+
   static inline void IRAM_ATTR
     __attribute__((always_inline))
     __attribute__((nonull))
@@ -100,60 +154,6 @@
     }
 
     return;
-  }
-
-
-  // Check for if the float is out of the limits defined by BLAS_PRINT_MAX_NUM and BLAS_PRINT_MIN_NUM
-  static inline int
-    __attribute__((always_inline))
-  check_limits(
-    float num,
-    char * buf
-  ) {
-    if (num > BLAS_PRINT_MAX_NUM) {
-      memcpy(buf, " Infinity ", BLAS_PRINT_ARRAY__NUM_DIGITS-1);
-      return -1;
-    } else if (num < BLAS_PRINT_MIN_NUM) {
-      memcpy(buf, "-   0.0000", BLAS_PRINT_ARRAY__NUM_DIGITS-1);
-      return -2;
-    } else {
-      return 0;
-    }
-  }
-
-
-  // Clears all buffer to spaces (' ')
-  static inline void
-    __attribute__((always_inline))
-  clear_string(
-    char * buf
-  ) {
-    for (unsigned int I = 0; buf[I] != '\0'; ++I) {
-      buf[I] = ' ';
-    }
-    return;
-  }
-
-
-  // Places decimal in buffer indicated by DECIMAL_INDEX
-  static inline void
-    __attribute__((always_inline))
-  place_decimal(
-    char * buf
-  ) {
-    //   num whole dig + (   num of ' chars  ) + (sign)  ~ This calulation is done to reduce this part to O(1) (constant) runtime
-    buf[DECIMAL_INDEX] = '.';
-    return;
-  }
-  
-
-  // Sets the sign of the number ('-' or '+')
-  static inline char
-    __attribute__((always_inline))
-  get_num_sign(
-    float num
-  ) {
-    return (num < 0.0) ? '-' : '+';
   }
 
 

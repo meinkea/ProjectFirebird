@@ -14,7 +14,7 @@
 
   void IRAM_ATTR
     __attribute__((always_inline))
-    __attribute__((nonull));
+    __attribute__((nonull))
   array_swap(
     float * arrSrcDstA,
     float * arrSrcDstB

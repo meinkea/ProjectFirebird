@@ -14,7 +14,7 @@
 
   void IRAM_ATTR
     __attribute__((always_inline))
-    __attribute__((nonull));
+    __attribute__((nonull))
   array_substract(
     float * arrRes,      //!< Array pointer where the result will be stored
     const float * arrOprA,     //!< Array pointer for the 1st operand
