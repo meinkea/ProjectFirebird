@@ -14,18 +14,21 @@
   #include "esp_attr.h"
 
 
-  void IRAM_ATTR array_ascl(
-         float * arrRes,        //!< Array pointer where the result will be stored
-         const float * arrOpr,      //!< Pointer for the array operand
-         const float sclOpr,        //!< Scalar operand to add to the elements of the array operand
-         const unsigned int start,  //!< Begining element index to begin loop
-         const unsigned int end     //!< Last element index to loop across
-       )
-         __attribute__((always_inline))
-         __attribute__((nonull));
-
-
-  #include "../src/array_ascl.c__"
+  void IRAM_ATTR 
+    __attribute__((always_inline))
+    __attribute__((nonull))
+  array_ascl(
+    float * arrRes,        //!< Array pointer where the result will be stored
+    const float * arrOpr,      //!< Pointer for the array operand
+    const float sclOpr,        //!< Scalar operand to add to the elements of the array operand
+    const unsigned int start,  //!< Begining element index to begin loop
+    const unsigned int end     //!< Last element index to loop across
+  ) {
+    for(unsigned int I=start; I<end;++I) {
+      arrRes[I] = arrOpr[I] + sclOpr;
+    }
+    return;
+  }
 
 
 #endif // ARRAY_ASCL_H

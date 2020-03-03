@@ -12,17 +12,22 @@
   #include "esp_attr.h"
 
 
-  void IRAM_ATTR array_asum(
-         float * sclRes,            //!< Float pointer for return value
-         const float * arrOpr,      //!< Array pointer for elements to sum
-         const unsigned int start,  //!< Starting element index to loop across
-         const unsigned int end     //!< Last element index to loop across
-       )
-         __attribute__((always_inline))
-         __attribute__((nonull));
-
-
-  #include "../src/array_asum.c__"
+  extern inline void IRAM_ATTR
+    __attribute__((always_inline))
+    __attribute__((nonull))
+  array_asum(
+    float * sclRes,            //!< Float pointer for return value
+    const float * arrOpr,      //!< Array pointer for elements to sum
+    const unsigned int start,  //!< Starting element index to loop across
+    const unsigned int end     //!< Last element index to loop across
+  ) {
+    float res = 0.0;
+    for(unsigned int I=start; I<end; ++I){
+      res += arrOpr[I];
+    }
+    *sclRes += res;
+    return;
+  }
 
 
 #endif // ARRAY_ASUM_H

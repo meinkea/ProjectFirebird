@@ -1,3 +1,4 @@
+
  /*! Returns a pointer to a printable string of the data in a Vector
   *
   *
@@ -37,42 +38,13 @@
   #define CHAR_0_ 48
 
 
-  static inline void IRAM_ATTR array_print(
-         char * buf,        //!< Pointer to string buffer for printing
-         const float sclSrc  //!< Array pointer for source data
-       )
-         __attribute__((always_inline))
-         __attribute__((nonull))
-  ;
-
-
-  static inline int check_limits(
-        float num,
-        char * buf
-      )
-        __attribute__((always_inline))
-  ;
-
-  static inline void clear_string(
-         char * buf
-      )
-        __attribute__((always_inline))
-  ;
-
-  static inline void place_decimal(
-         char * buf
-       )
-        __attribute__((always_inline))
-  ;
-  
-  static inline char get_num_sign(
-         float num
-       )
-        __attribute__((always_inline))
-  ;
-
-
-  void IRAM_ATTR array_print(char * buf, const float sclSrc) {
+  static inline void IRAM_ATTR
+    __attribute__((always_inline))
+    __attribute__((nonull))
+  array_print(
+    char * buf,        //!< Pointer to string buffer for printing
+    const float sclSrc  //!< Array pointer for source data
+  ) { 
     // Check for out of limit number
     if (check_limits(sclSrc, buf) != 0) {
       return;
@@ -132,7 +104,12 @@
 
 
   // Check for if the float is out of the limits defined by BLAS_PRINT_MAX_NUM and BLAS_PRINT_MIN_NUM
-  int check_limits(float num, char * buf) {
+  static inline int
+    __attribute__((always_inline))
+  check_limits(
+    float num,
+    char * buf
+  ) {
     if (num > BLAS_PRINT_MAX_NUM) {
       memcpy(buf, " Infinity ", BLAS_PRINT_ARRAY__NUM_DIGITS-1);
       return -1;
@@ -146,7 +123,11 @@
 
 
   // Clears all buffer to spaces (' ')
-  void clear_string(char * buf) {
+  static inline void
+    __attribute__((always_inline))
+  clear_string(
+    char * buf
+  ) {
     for (unsigned int I = 0; buf[I] != '\0'; ++I) {
       buf[I] = ' ';
     }
@@ -155,18 +136,25 @@
 
 
   // Places decimal in buffer indicated by DECIMAL_INDEX
-  void place_decimal(char * buf) {
+  static inline void
+    __attribute__((always_inline))
+  place_decimal(
+    char * buf
+  ) {
     //   num whole dig + (   num of ' chars  ) + (sign)  ~ This calulation is done to reduce this part to O(1) (constant) runtime
     buf[DECIMAL_INDEX] = '.';
     return;
   }
-
+  
 
   // Sets the sign of the number ('-' or '+')
-  char get_num_sign(float num) {
+  static inline char
+    __attribute__((always_inline))
+  get_num_sign(
+    float num
+  ) {
     return (num < 0.0) ? '-' : '+';
   }
-
 
 
 #endif // ARRAY_PRINT_H
