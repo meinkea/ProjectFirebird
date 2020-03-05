@@ -1,0 +1,88 @@
+\hypertarget{vprint_8h}{}\section{src/lvl1/inc/vprint.h File Reference}
+\label{vprint_8h}\index{src/lvl1/inc/vprint.\+h@{src/lvl1/inc/vprint.\+h}}
+{\ttfamily \#include \char`\"{}esp\+\_\+attr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../gnd/inc/vector.\+h\char`\"{}}\newline
+Include dependency graph for vprint.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{vprint_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{vprint_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vprint_8h_aa224f5a878307cc9b638d5f018be9e8a}{B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{vprint_8h_a65ec2249691ca6df5ff6ce36ad4709cb}{vprint} (char $\ast$buf, const struct \hyperlink{structvector}{vector} $\ast$v\+Src) \hyperlink{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((nonull))
+\item 
+int \hyperlink{vprint_8h_aeac993addf63373f2ff712eb5d135774}{vprint\+\_\+init\+\_\+buffer} (char $\ast$buf, const struct \hyperlink{structvector}{vector} $\ast$v\+Src) \hyperlink{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((nonull))
+\item 
+int \hyperlink{vprint_8h_a0e21281ce868d5b6804172e4162a923b}{vprint\+\_\+free\+\_\+buffer} (char $\ast$buf) \hyperlink{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((nonull))
+\item 
+unsigned int \hyperlink{vprint_8h_a45635083f6173b934cc506f30f5a6de7}{calc\+\_\+buffer\+\_\+size\+\_\+req} (const struct \hyperlink{structvector}{vector} $\ast$v\+Opr) \hyperlink{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}((nonull))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vprint_8h_aa224f5a878307cc9b638d5f018be9e8a}\label{vprint_8h_aa224f5a878307cc9b638d5f018be9e8a}} 
+\index{vprint.\+h@{vprint.\+h}!B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H@{B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H}}
+\index{B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H@{B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H}!vprint.\+h@{vprint.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H}{BLAS\_VPRINT\_H}}
+{\footnotesize\ttfamily \#define B\+L\+A\+S\+\_\+\+V\+P\+R\+I\+N\+T\+\_\+H}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{vprint_8h_a45635083f6173b934cc506f30f5a6de7}\label{vprint_8h_a45635083f6173b934cc506f30f5a6de7}} 
+\index{vprint.\+h@{vprint.\+h}!calc\+\_\+buffer\+\_\+size\+\_\+req@{calc\+\_\+buffer\+\_\+size\+\_\+req}}
+\index{calc\+\_\+buffer\+\_\+size\+\_\+req@{calc\+\_\+buffer\+\_\+size\+\_\+req}!vprint.\+h@{vprint.\+h}}
+\subsubsection{\texorpdfstring{calc\+\_\+buffer\+\_\+size\+\_\+req()}{calc\_buffer\_size\_req()}}
+{\footnotesize\ttfamily unsigned int calc\+\_\+buffer\+\_\+size\+\_\+req (\begin{DoxyParamCaption}\item[{const struct \hyperlink{structvector}{vector} $\ast$}]{v\+Opr }\end{DoxyParamCaption})}
+
+This useful function calculates the required char buffer size for printing Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{vprint_8h_a45635083f6173b934cc506f30f5a6de7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vprint_8h_a65ec2249691ca6df5ff6ce36ad4709cb}\label{vprint_8h_a65ec2249691ca6df5ff6ce36ad4709cb}} 
+\index{vprint.\+h@{vprint.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!vprint.\+h@{vprint.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR vprint (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{const struct \hyperlink{structvector}{vector} $\ast$}]{v\+Src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{vprint_8h_a0e21281ce868d5b6804172e4162a923b}\label{vprint_8h_a0e21281ce868d5b6804172e4162a923b}} 
+\index{vprint.\+h@{vprint.\+h}!vprint\+\_\+free\+\_\+buffer@{vprint\+\_\+free\+\_\+buffer}}
+\index{vprint\+\_\+free\+\_\+buffer@{vprint\+\_\+free\+\_\+buffer}!vprint.\+h@{vprint.\+h}}
+\subsubsection{\texorpdfstring{vprint\+\_\+free\+\_\+buffer()}{vprint\_free\_buffer()}}
+{\footnotesize\ttfamily int vprint\+\_\+free\+\_\+buffer (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{vprint_8h_aeac993addf63373f2ff712eb5d135774}\label{vprint_8h_aeac993addf63373f2ff712eb5d135774}} 
+\index{vprint.\+h@{vprint.\+h}!vprint\+\_\+init\+\_\+buffer@{vprint\+\_\+init\+\_\+buffer}}
+\index{vprint\+\_\+init\+\_\+buffer@{vprint\+\_\+init\+\_\+buffer}!vprint.\+h@{vprint.\+h}}
+\subsubsection{\texorpdfstring{vprint\+\_\+init\+\_\+buffer()}{vprint\_init\_buffer()}}
+{\footnotesize\ttfamily int vprint\+\_\+init\+\_\+buffer (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{const struct \hyperlink{structvector}{vector} $\ast$}]{v\+Src }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{vprint_8h_aeac993addf63373f2ff712eb5d135774_cgraph}
+\end{center}
+\end{figure}

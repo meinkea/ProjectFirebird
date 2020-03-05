@@ -1,0 +1,86 @@
+\hypertarget{array__zero_8h}{}\section{src/lvl0/inc/array\+\_\+zero.h File Reference}
+\label{array__zero_8h}\index{src/lvl0/inc/array\+\_\+zero.\+h@{src/lvl0/inc/array\+\_\+zero.\+h}}
+{\ttfamily \#include \char`\"{}esp\+\_\+attr.\+h\char`\"{}}\newline
+Include dependency graph for array\+\_\+zero.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{array__zero_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array__zero_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{array__zero_8h_ac6a3eb315a3c23dc2988be166ad1ec9f}{A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR \hyperlink{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}{\+\_\+\+\_\+attribute\+\_\+\+\_\+} ((always\+\_\+inline)) \+\_\+\+\_\+attribute\+\_\+\+\_\+((nonull)) array\+\_\+zero(float $\ast$arr\+Dst
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR const unsigned int \hyperlink{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}{start}
+\begin{DoxyCompactList}\small\item\em $<$ Array pointer where the result will be stored \end{DoxyCompactList}\item 
+void I\+R\+A\+M\+\_\+\+A\+T\+TR const unsigned int const unsigned int \hyperlink{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}{end}
+\begin{DoxyCompactList}\small\item\em $<$ Last element index to loop across \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{array__zero_8h_ac6a3eb315a3c23dc2988be166ad1ec9f}\label{array__zero_8h_ac6a3eb315a3c23dc2988be166ad1ec9f}} 
+\index{array\+\_\+zero.\+h@{array\+\_\+zero.\+h}!A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H@{A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H}}
+\index{A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H@{A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H}!array\+\_\+zero.\+h@{array\+\_\+zero.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H}{ARRAY\_SET\_H}}
+{\footnotesize\ttfamily \#define A\+R\+R\+A\+Y\+\_\+\+S\+E\+T\+\_\+H}
+
+This function Zeros the elements in an array 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}\label{array__zero_8h_a773bfa726d26ed3aba89b686193787aa}} 
+\index{array\+\_\+zero.\+h@{array\+\_\+zero.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!array\+\_\+zero.\+h@{array\+\_\+zero.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}\label{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}} 
+\index{array\+\_\+zero.\+h@{array\+\_\+zero.\+h}!end@{end}}
+\index{end@{end}!array\+\_\+zero.\+h@{array\+\_\+zero.\+h}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR const unsigned int const unsigned int end}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} I=\hyperlink{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}{start}; I<\hyperlink{array__zero_8h_ae062d39ef5523e038e43c08fa9fe07b4}{end}; ++I) \{
+      arrDst[I] = 0.0;
+    \}
+    \textcolor{keywordflow}{return}
+\end{DoxyCode}
+
+
+$<$ Last element index to loop across 
+
+\mbox{\Hypertarget{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}\label{array__zero_8h_a1951879481f1ba4287d30b0a485429fc}} 
+\index{array\+\_\+zero.\+h@{array\+\_\+zero.\+h}!start@{start}}
+\index{start@{start}!array\+\_\+zero.\+h@{array\+\_\+zero.\+h}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily void I\+R\+A\+M\+\_\+\+A\+T\+TR const unsigned int start}
+
+
+
+$<$ Array pointer where the result will be stored 
+
+Starting element index to loop across 
