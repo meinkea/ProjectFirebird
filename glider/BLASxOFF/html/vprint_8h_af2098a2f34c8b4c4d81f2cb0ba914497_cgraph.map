@@ -1,7 +1,0 @@
-<map id="vprint" name="vprint">
-<area shape="rect" id="node2" href="$array__print_8h.html#a08a6898825847b4b66a83c7a3a5ed5b6" title="array_print" alt="" coords="108,81,191,108"/>
-<area shape="rect" id="node3" href="$array__print_8c.html#af3cb01b22a0cf894bc4b8ad803687a5c" title="check_limits" alt="" coords="244,5,339,32"/>
-<area shape="rect" id="node4" href="$array__print_8c.html#aca7fce0d23d4a9bcb94f55a5ffe8e611" title="clear_string" alt="" coords="247,56,336,83"/>
-<area shape="rect" id="node5" href="$array__print_8c.html#a5f9f6b236eb0c51fe8208f8d673589a0" title="place_decimal" alt="" coords="239,107,344,133"/>
-<area shape="rect" id="node6" href="$array__print_8c.html#a327e772b44d609b6b0bdd9cdbd8e7601" title="get_num_sign" alt="" coords="240,157,343,184"/>
-</map>
