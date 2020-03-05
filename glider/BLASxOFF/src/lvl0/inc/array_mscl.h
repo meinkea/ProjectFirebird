@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_MSCL_H
   #define ARRAY_MSCL_H
 
@@ -30,5 +35,10 @@
 
 
 #endif // ARRAY_MSCL_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

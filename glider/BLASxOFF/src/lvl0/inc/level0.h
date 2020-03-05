@@ -21,9 +21,11 @@
   #include "array_set.h"
   #include "array_subtract.h"
   #include "array_swap.h"
-  //#include "array_zero.h"
+  #include "array_zero.h"
 
   //#include "check_dim.h"
 
 
 #endif // BLAS_LEVEL0_H
+
+

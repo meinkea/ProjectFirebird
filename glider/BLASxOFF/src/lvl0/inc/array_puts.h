@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_PUTS_H
   #define ARRAY_PUTS_H
 
@@ -26,5 +31,10 @@
 
 
 #endif // ARRAY_PUTS_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

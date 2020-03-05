@@ -7,6 +7,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_ASCL_H
   #define ARRAY_ASCL_H
 
@@ -32,5 +37,10 @@
 
 
 #endif // ARRAY_ASCL_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

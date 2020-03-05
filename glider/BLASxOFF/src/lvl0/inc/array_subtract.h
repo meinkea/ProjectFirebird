@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_SUBTRACT_H
   #define ARRAY_SUBTRACT_H
 
@@ -30,5 +35,10 @@
 
 
 #endif // ARRAY_SUBTRACT_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

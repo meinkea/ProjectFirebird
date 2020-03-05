@@ -1,13 +1,17 @@
+/*! Returns a pointer to a printable string of the data in a Vector
+ *
+ *
+ *
+ */
 
- /*! Returns a pointer to a printable string of the data in a Vector
-  *
-  *
-  *
-  */
+
+#ifdef __cplusplus
+  extern "C"
+#endif
+
  
- 
- #ifndef ARRAY_PRINT_H
-   #define ARRAY_PRINT_H
+#ifndef ARRAY_PRINT_H
+  #define ARRAY_PRINT_H
 
 
   #include <stdio.h>
@@ -158,5 +162,10 @@
 
 
 #endif // ARRAY_PRINT_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

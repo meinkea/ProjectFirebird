@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_SWAP_H
   #define ARRAY_SWAP_H
 
@@ -31,3 +36,8 @@
 #endif // ARRAY_SWAP_H
 
  
+#ifdef __cplusplus
+  }
+#endif 
+
+

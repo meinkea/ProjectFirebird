@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_MULT_H
   #define ARRAY_MULT_H
 
@@ -31,5 +36,9 @@
 
 #endif // ARRAY_MULT_H
 
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

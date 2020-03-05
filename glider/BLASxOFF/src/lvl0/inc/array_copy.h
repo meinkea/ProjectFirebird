@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_COPY_H
   #define ARRAY_COPY_H
 
@@ -29,5 +34,10 @@
 
 
 #endif // ARRAY_COPY_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

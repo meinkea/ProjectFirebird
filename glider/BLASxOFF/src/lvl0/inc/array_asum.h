@@ -5,6 +5,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef ARRAY_ASUM_H
   #define ARRAY_ASUM_H
 
@@ -31,3 +36,10 @@
 
 
 #endif // ARRAY_ASUM_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
+
+
