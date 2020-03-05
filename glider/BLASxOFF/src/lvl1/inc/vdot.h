@@ -3,8 +3,13 @@
  */
 
 
-#ifndef BLAS_VDOT_H
-  #define BLAS_VDOT_H
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
+#ifndef BLAS_VDOTP_H
+  #define BLAS_VDOTP_H
 
 
   #include "esp_attr.h"
@@ -14,7 +19,7 @@
   #include "../../gnd/inc/vector.h"
 
 
-  void IRAM_ATTR vdot(
+  void IRAM_ATTR vdotp(
          float * sclRes,
          const struct vector * vOprA,
          const struct vector * vOprB
@@ -23,6 +28,11 @@
   ;
 
 
-#endif // BLAS_VDOT_H
+#endif // BLAS_VDOTP_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

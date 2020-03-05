@@ -3,6 +3,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VASCL_H
   #define BLAS_VASCL_H
 
@@ -24,5 +29,10 @@
 
 
 #endif // VASCL.h
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

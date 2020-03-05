@@ -3,6 +3,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VPUTS_H
   #define BLAS_VPUTS_H
 
@@ -23,5 +28,10 @@
 
 
 #endif // BLAS_VPUTS_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

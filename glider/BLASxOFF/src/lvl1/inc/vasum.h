@@ -3,6 +3,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VASUM_H
   #define BLAS_VASUM_H
 
@@ -23,5 +28,10 @@
 
 
 #endif // BLAS_VASUM_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

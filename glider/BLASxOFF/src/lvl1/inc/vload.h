@@ -3,6 +3,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VLOAD_H
   #define BLAS_VLOAD_H
 
@@ -22,5 +27,10 @@
 
 
 #endif // BLAS_VLOAD_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

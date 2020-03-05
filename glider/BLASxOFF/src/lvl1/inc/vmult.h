@@ -3,6 +3,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VMULT_H
   #define BLAS_VMULT_H
 
@@ -24,5 +29,10 @@
 
 
 #endif // BLAS_VMULT_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

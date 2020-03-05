@@ -12,6 +12,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VNRM2_H
   #define BLAS_VNRM2_H
 
@@ -33,5 +38,10 @@
 
 
 #endif // BLAS_VNRM2_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 

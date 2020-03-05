@@ -3,6 +3,11 @@
  */
 
 
+#ifdef __cplusplus
+  extern "C"
+#endif
+
+
 #ifndef BLAS_VAXSY_H
   #define BLAS_VAXSY_H
 
@@ -24,5 +29,10 @@
 
 
 #endif // BLAS_VAXSY_H
+
+
+#ifdef __cplusplus
+  }
+#endif 
 
 
